@@ -139,7 +139,7 @@
   content: "";
   position: absolute;
   transform: translateY(2px);
-  background: url("../chemistry.png");
+  background: url("chemistry.png");
   background-size: contain;
   width: 26px;
   height: 27px;
