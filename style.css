@@ -135,6 +135,15 @@
   background-image: url(pdf-file.png);
   background-size: contain;
 }
+.content-body .box-content .biophysics-lab .sub-title::after {
+  content: "";
+  position: absolute;
+  transform: translateY(2px);
+  background: url("../chemistry.png");
+  background-size: contain;
+  width: 26px;
+  height: 27px;
+}
 
 .footer {
   text-transform: capitalize;
