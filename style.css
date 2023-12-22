@@ -202,4 +202,10 @@
   .footer {
     padding-left: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* edited 12-22-2023 */
+@font-face {
+  font-family: CairoPlay-Black;
+  src: url(CairoPlay-Black.ttf);
+}
+/*# sourceMappingURL=style.css.map */
