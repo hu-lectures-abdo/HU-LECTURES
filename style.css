@@ -73,6 +73,45 @@
   text-align: center;
   font-family: sans-serif;
 }
+/*  */
+/* edited 12-22-2023 */
+.content-notes {
+  width: 90%;
+  min-height: 5vh;
+  margin-left: 5%;
+  margin-top: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 0 0 0;
+  font-family: CairoPlay-Black;
+}
+.content-notes h4 , h5 {
+  text-align: center;
+}
+.content-notes .qr-box {
+  width: 100%;
+  height: 50vh;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content-notes .qr-box .qr-image {
+  display: inline-block;
+  width: 55vh;
+  height: 50vh;  
+  background-image:url('qr-code.png') ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 992px){
+  .content-notes .qr-box {
+    display: none;
+  }
+}
+
+/*  */
+/*  */
 .content-body .box-content {
   width: 90%;
   min-height: 20vh;
