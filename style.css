@@ -231,8 +231,8 @@
     font-family: cursive, sans-serif;
   }
   * body .container {
-    -webkit-background-image: linear-gradient(135deg, #1d1c1c, #120922);
-            background-image: linear-gradient(135deg, #1d1c1c, #120922);
+    -webkit-background-image: linear-gradient(135deg, #0e0d0d, #120922);
+            background-image: linear-gradient(135deg, #0e0d0d, #120922);
     color: aliceblue;
   }
   .content-notes {
