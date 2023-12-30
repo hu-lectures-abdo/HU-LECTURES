@@ -73,6 +73,12 @@
   text-align: center;
   font-family: sans-serif;
 }
+/* edited 12-30-2023 */
+.content-logo-title-subtitle {
+  color: #7f2cff;
+  font-family:cursive , sans-serif;
+}
+/*  */
 /*  */
 /* edited 12-22-2023 */
  .content-notes {
@@ -208,4 +214,78 @@
   font-family: CairoPlay-Black;
   src: url(CairoPlay-Black.ttf);
 }
+/*  */
+/* edited 12-30-2023 */
+@media (prefers-color-scheme: dark) {
+  * body .container .nav-bar {
+    background-color: #7e78bb;
+  }
+  * body .container .nav-bar ul li a {
+    color: #110722;
+  }
+  * body .container .nav-bar ul li a:hover {
+    color: #ffc03c;
+  }
+  .content-logo-title-subtitle {
+    color: #b3abff;
+    font-family: cursive, sans-serif;
+  }
+  * body .container {
+    background-image: linear-gradient(135deg, #140909, #110722);
+    color: aliceblue;
+  }
+  .content-notes {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(90, 89, 89, 0.61);
+    -webkit-box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
+            box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
+  }
+  .content-body .box-content {
+    border: 2px solid aliceblue;
+  }
+  .content-body .box-content .box-type .sub-title::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    background: url("5545.png");
+    background-size: contain;
+    width: 26px;
+    height: 27px;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link {
+    border: 1px solid aliceblue;
+    color: aliceblue;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    background-image: url("7856-pdf.png");
+    background-size: contain;
+  }
+  .content-body .box-content .biophysics-lab .sub-title::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    background: url("6e72ch.jpeg");
+    background-size: contain;
+    width: 26px;
+    height: 27px;
+  }
+  .content-body .box-content .box-type .box-lucture .lucture .lucture-link:visited {
+    color: #8e82ff;
+  }
+  .footer {
+    background-color: #68639f;
+    color: #ffffff;
+  }
+}
+/*  */
 /*# sourceMappingURL=style.css.map */
