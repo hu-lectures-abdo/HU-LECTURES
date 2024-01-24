@@ -1,292 +1,192 @@
-:root {
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 * body {
-  min-width: 100%;
-  min-height: 100vh;
-  background-color: aliceblue;
-}
-* body .container {
-  min-width: 100%;
-  min-height: 100vh;
-  background-color: beige;
-}
-* body .container .nav-bar {
-  position: fixed;
   width: 100%;
-  height: 5em;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #b3abff;
-  z-index: 999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
-* body .container .nav-bar .box-img {
-  position: relative;
-  width: 200px;
-  height: 100%;
-  background-image: url("HU-LOGO.png");
-  background-size: 100% 95%;
-  overflow-x: hidden;
-}
-* body .container .nav-bar ul {
-  list-style: none;
-  margin-right: 10px;
-  text-transform: capitalize;
-}
-* body .container .nav-bar ul li {
-  display: inline-block;
-  margin-left: 13px;
-  font-family: sans-serif;
-}
-* body .container .nav-bar ul li a {
-  text-decoration: none;
-  color: #bb3a06;
-}
-* body .container .nav-bar ul li a:hover {
-  color: #ff4c05;
-  transition: 0.1s;
-}
-
-@media (max-width: 992px) {
-  * body .container .nav-bar {
-    flex-direction: column;
-  }
-  * body .container .nav-bar ul {
-    display: none;
-  }
-}
-.content-body {
-  width: 100%;
-  padding-top: 5.3em;
-  min-height: 100vh;
-  z-index: -1;
-}
-.content-body .content-logo-title {
-  transform: translateY(80px);
-  text-align: center;
-  font-family: sans-serif;
-}
-/* edited 12-30-2023 */
-.content-logo-title-subtitle {
-  color: #7f2cff;
-  font-family:cursive , sans-serif;
-}
-/*  */
-/*  */
-/* edited 12-22-2023 */
- .content-notes {
-  width: 90%;
-  min-height: 5vh;
-  margin-left: 5%;
-  margin-top: 150px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 0 0 0;
-  font-family: CairoPlay-Black;
-}
-.content-notes h4 , h5 {
-  text-align: center;
-}
-.content-notes .qr-box {
+* body section {
   width: 100%;
   height: 50vh;
-  margin-top: 1%;
+  color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.content-notes .qr-box .qr-image {
-  display: inline-block;
-  width: 55vh;
-  height: 50vh;  
-  background-image:url('qr-code.png') ;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media (max-width: 992px){
-  .content-notes .qr-box {
-    display: none;
-  }
-}
-
-/*  */
-/*  */
-.content-body .box-content {
-  width: 90%;
-  min-height: 20vh;
-  margin-left: 5%;
-  margin-top: 30px;
-  border: 2px solid black;
-  border-radius: 24px;
-}
-.content-body .box-content .box-type {
-  width: 100%;
-  min-height: 40vh;
-  padding: 15px;
-  padding-top: 80px;
-}
-.content-body .box-content .box-type .sub-title {
-  font-family: sans-serif;
-  text-transform: capitalize;
-  margin-bottom: 4px;
-}
-.content-body .box-content .box-type .sub-title::after {
-  content: "";
-  position: absolute;
-  transform: translateY(2px);
-  background: url("icons8-school-50.png");
-  background-size: contain;
-  width: 26px;
-  height: 27px;
-}
-.content-body .box-content .box-type .box-lucture {
-  transform: translateX(12%);
-  padding: 20px;
-  width: 88%;
-  min-height: 40vh;
-}
-.content-body .box-content .box-type .box-lucture .lucture {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 20px;
-}
-.content-body .box-content .box-type .box-lucture .lucture .lucture-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 200px;
+          perspective: 200px;
   position: relative;
-  text-transform: capitalize;
-  font-family: sans-serif;
-  padding: 6px;
-  border-radius: 20px;
-  text-decoration: none;
-  border: 1px solid #000;
-  padding-left: 29px;
 }
-.content-body .box-content .box-type .box-lucture .lucture .lucture-link::before {
-  content: "";
+* body section video {
   position: absolute;
-  left: 4px;
-  top: 2px;
-  width: 25px;
-  height: 25px;
-  background-image: url(pdf-file.png);
-  background-size: contain;
-}
-.content-body .box-content .biophysics-lab .sub-title::after {
-  content: "";
-  position: absolute;
-  transform: translateY(2px);
-  background: url("chemistry.png");
-  background-size: contain;
-  width: 26px;
-  height: 27px;
-}
-
-.footer {
-  text-transform: capitalize;
-  font-family: sans-serif;
-  padding-top: 10px;
   width: 100%;
-  height: 5em;
-  background-color: #b3abff;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  height: 50vh;
+}
+* body section h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 10vh;
   font-family: sans-serif;
 }
+* body section h1 span {
+  display: inline-block;
+  opacity: 0;
+  -webkit-animation: animate 1s linear forwards;
+          animation: animate 1s linear forwards;
+}
+* body section h1 span:nth-child(1) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+body section h1 span:nth-child(1)::after{
+  content: 'o';
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  color: aqua;
+  -webkit-animation: animate-2 1s linear forwards;
+          animation: animate-2 1s linear forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+* body section h1 span:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+* body section h1 span:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+* body section h1 span:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+* body section h1 span:nth-child(5) {
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
+}
+* body section h1 span:nth-child(6) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+* body section h1 span:nth-child(7) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
 
-@media (max-width: 320px) {
-  .footer {
-    padding-left: 10px;
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
   }
-}
-/* edited 12-22-2023 */
-@font-face {
-  font-family: CairoPlay-Black;
-  src: url(CairoPlay-Black.ttf);
-}
-/*  */
-/* edited 12-30-2023 */
-@media (prefers-color-scheme: dark) {
-  * body .container .nav-bar {
-    background-color: #7e78bb;
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
-  * body .container .nav-bar ul li a {
-    color: #110722;
+  
+
+    }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
   }
-  * body .container .nav-bar ul li a:hover {
-    color: #ffc03c;
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
-  .content-logo-title-subtitle {
-    color: #b3abff;
-    font-family: cursive, sans-serif;
+  
+
+    }
+    @-webkit-keyframes animate-2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+      
+    }
+    @keyframes animate-2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+      
+    }
+@media (max-width:360px) {
+  * body section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 9vh;
+    font-family: sans-serif;
   }
-  * body .container {
-    -webkit-background-image: linear-gradient(135deg, #0e0d0d, #120922);
-            background-image: linear-gradient(135deg, #0e0d0d, #120922);
-    color: aliceblue;
-  }
-  .content-notes {
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    border: 0.5px solid rgba(90, 89, 89, 0.61);
-    -webkit-box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
-            box-shadow: 0 1px 20px 0 rgba(90, 89, 89, 0.61);
-  }
-  .content-body .box-content {
-    border: 2px solid aliceblue;
-  }
-  .content-body .box-content .box-type .sub-title::after {
-    content: "";
+  * body section video {
     position: absolute;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
-    background: url("5545.png");
-    background-size: contain;
-    width: 26px;
-    height: 27px;
+    left: 0%;
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .content-body .box-content .box-type .box-lucture .lucture .lucture-link {
-    border: 1px solid aliceblue;
-    color: aliceblue;
+  * body section h1 span:nth-child(2) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
-  .content-body .box-content .box-type .box-lucture .lucture .lucture-link::before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 2px;
-    width: 25px;
-    height: 25px;
-    background-image: url("7856-pdf.png");
-    background-size: contain;
+  * body section h1 span:nth-child(3) {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
   }
-  .content-body .box-content .biophysics-lab .sub-title::after {
-    content: "";
-    position: absolute;
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
-    background: url("6e72ch.jpeg");
-    background-size: contain;
-    width: 26px;
-    height: 27px;
+  * body section h1 span:nth-child(4) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
   }
-  .content-body .box-content .box-type .box-lucture .lucture .lucture-link:visited {
-    color: #8e82ff;
+  * body section h1 span:nth-child(5) {
+    -webkit-animation-delay: 2.75s;
+            animation-delay: 2.75s;
   }
-  .footer {
-    background-color: #68639f;
-    color: #ffffff;
+  * body section h1 span:nth-child(6) {
+    -webkit-animation-delay: 3.3s;
+            animation-delay: 3.3s;
   }
+  * body section h1 span:nth-child(7) {
+    -webkit-animation-delay: 3.9s;
+            animation-delay: 3.9s;
+  }
+  
+  
+  
 }
-/*  */
-/*# sourceMappingURL=style.css.map */
+    
