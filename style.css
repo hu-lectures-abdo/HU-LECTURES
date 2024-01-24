@@ -185,8 +185,22 @@ body section h1 span:nth-child(1)::after{
     -webkit-animation-delay: 3.9s;
             animation-delay: 3.9s;
   }
-  
-  
-  
 }
+@media (max-width:320px) {
+  * body section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 8vh;
+    font-family: sans-serif;
+  }
+  * body section video {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+    
     
