@@ -169,6 +169,14 @@ body section h1 span:nth-child(1)::after{
         font-family: sans-serif;
       }
     }
+ @media (max-width:206px) {
+      * body section h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: sans-serif;
+      }
+    }
 
 
  
