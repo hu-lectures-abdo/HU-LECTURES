@@ -41,7 +41,7 @@
 * body section h1 {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 8vh;
+   font-size: 50px;
   font-family: sans-serif;
 }
 * body section h1 span {
@@ -143,96 +143,34 @@ body section h1 span:nth-child(1)::after{
       }
       100% {
         opacity: 1;
-      }
-      
+      }      
     }
 @media (max-width:360px) {
-  * body section h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 9vh;
-    font-family: sans-serif;
-  }
-  * body section video {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    height: 50vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  * body section h1 span:nth-child(2) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  * body section h1 span:nth-child(3) {
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-  }
-  * body section h1 span:nth-child(4) {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  * body section h1 span:nth-child(5) {
-    -webkit-animation-delay: 2.75s;
-            animation-delay: 2.75s;
-  }
-  * body section h1 span:nth-child(6) {
-    -webkit-animation-delay: 3.3s;
-            animation-delay: 3.3s;
-  }
-  * body section h1 span:nth-child(7) {
-    -webkit-animation-delay: 3.9s;
-            animation-delay: 3.9s;
-  }
-}
-@media (max-width:320px) {
-  * body section h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 8vh;
-    font-family: sans-serif;
-  }
-  * body section video {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width:260px) {
-  * body section h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 7vh;
-    font-family: sans-serif;
-  }
-  * body section video {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width:228px) {
-  * body section h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 6vh;
-    font-family: sans-serif;
-  }
-  * body section video {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-    
-    
+      * body section h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 45px;
+        font-family: sans-serif;
+      }
+    }
+    @media (max-width:265px) {
+      * body section h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+    }
+    @media (max-width:235px) {
+      * body section h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-family: sans-serif;
+      }
+    }
+
+
+ 
+ 
+ 
