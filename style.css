@@ -202,5 +202,37 @@ body section h1 span:nth-child(1)::after{
        object-fit: cover;
   }
 }
+@media (max-width:260px) {
+  * body section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 7vh;
+    font-family: sans-serif;
+  }
+  * body section video {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width:228px) {
+  * body section h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 6vh;
+    font-family: sans-serif;
+  }
+  * body section video {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
     
     
