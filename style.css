@@ -364,7 +364,7 @@ a {
 }
 * .body-section-body .text-node {
   left: 0;
-  max-width: 50%;
+  width: 40%;
   min-height: 50vh;
   background-color: rgba(221, 221, 221, 0.2);
   border-radius: 20px;
@@ -650,7 +650,7 @@ a {
   }
   *.body-section-body .text-node {
     display: block;
-    max-width: 100%;
+    width: 50%;
     min-height: 45vh;
   }
   * .body-section-body .text-loading-hello {
@@ -735,7 +735,7 @@ a {
   }
   * .body-section-body .text-node {
     display: block;
-    max-width: 100%;
+    width: 50%;
     min-height: 45vh;
   }
   .section h1 {
