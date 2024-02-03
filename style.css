@@ -650,7 +650,7 @@ a {
   }
   *.body-section-body .text-node {
     display: block;
-    width: 50%;
+    width: 90%;
     min-height: 45vh;
   }
   * .body-section-body .text-loading-hello {
@@ -735,7 +735,7 @@ a {
   }
   * .body-section-body .text-node {
     display: block;
-    width: 50%;
+    width: 90%;
     min-height: 45vh;
   }
   .section h1 {
