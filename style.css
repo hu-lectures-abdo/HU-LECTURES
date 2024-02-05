@@ -762,8 +762,16 @@ a {
   }
   *.body-section-body .text-node {
     display: block;
+    padding:  0 15px;
     width: 90%;
     min-height: 250px;
+  }
+  * .body-section-body .text-node p {
+    padding-left: 35px;
+    font-size: 21px;
+    font-family: var(--font-bage);
+    padding-bottom: 7px;
+    padding-right: 35px;
   }
   * .body-section-body .text-loading-hello {
     display: none;
@@ -863,7 +871,15 @@ a {
   * .body-section-body .text-node {
     display: block;
     width: 100%;
-    min-height: 250px;
+    padding: 4px;
+    min-height: 210px;
+  }
+  * .body-section-body .text-node p {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: var(--font-bage);
+    padding-bottom: 7px;
+    padding-right: 20px;
   }
   .section h1 {
     font-size: 2.1rem;
