@@ -232,7 +232,7 @@ a {
   letter-spacing: 3px;
 }
 * .section .container .card-lecture .lecture-lec .lecture-link:visited {
-  background-color: #752164;
+  background-color: #2bd1df;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -263,7 +263,7 @@ a {
   left: 0px;
   width: 15px;
   height: 15px;
-  background-color: var(--color-box-1);
+  background-color: transparent;
   border-radius: 100vw;
   -webkit-box-shadow: -6px 5.2px 0px var(--color-border);
   box-shadow: -6px 5.2px 0px var(--color-border);
@@ -275,7 +275,7 @@ a {
   left: 140px;
   width: 15px;
   height: 15px;
-  background-color: var(--color-box-1);
+  background-color: transparent;
   border-radius: 100vw;
   -webkit-box-shadow: -6px 5.2px 0px var(--color-border);
   box-shadow: -6px 5.2px 0px var(--color-border);
@@ -320,7 +320,7 @@ a {
   left: 0px;
   width: 15px;
   height: 15px;
-  background-color: var(--color-box-2);
+  background-color: transparent;
   border-radius: 100vw;
   -webkit-box-shadow: -6px -5.2px 0px var(--color-border);
   box-shadow: -6px -5.2px 0px var(--color-border);
