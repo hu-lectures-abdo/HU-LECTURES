@@ -195,8 +195,8 @@ a {
   -webkit-box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.6156862745);
           box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.6156862745);
   padding: 4px 3% 3% 3%;
-  --color-box-1: #430e6b;
-  --color-box-2: #020e21fa;
+  --color-box-1: #53252b;
+  --color-box-2: #244952;
   /* --color-border:#b57e99; */ /* diffrent value to every section */
   margin-left: 2.5%;
   /* padding: 0px 1.5%; */
@@ -232,7 +232,7 @@ a {
   letter-spacing: 3px;
 }
 * .section .container .card-lecture .lecture-lec .lecture-link:visited {
-  background-color: #154a61;
+  background-color: #752164;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
