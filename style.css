@@ -199,7 +199,7 @@ a {
   --color-box-2: #020e21fa;
   /* --color-border:#b57e99; */ /* diffrent value to every section */
   margin-left: 2.5%;
-  padding: 0px 1.5%;
+  /* padding: 0px 1.5%; */
 }
 * .section .container .card-lecture .lecture-lec .lecture-link {
   display: block;
@@ -564,6 +564,7 @@ a {
 }
 * .section-2 .container .card-lecture .lecture-lec {
   --color-border: #859fbd;
+  padding: 0px 1.5%
 }
 * .section-3 {
   background-color: #d11372;
@@ -604,6 +605,7 @@ a {
 }
 * .section-4 .container .card-lecture .lecture-lec {
   --color-border: #8c7bab;
+  padding: 0px 1.5%
 }
 * .section-5 {
   background-color: #096147;
@@ -626,6 +628,7 @@ a {
 }
 * .section-5 .container .card-lecture .lecture-lec {
   --color-border: #7b948d;
+  padding: 0px 1.5%
 }
 * .section-6 {
   background-color: #770b34;
