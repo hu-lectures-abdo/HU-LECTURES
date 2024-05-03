@@ -26,7 +26,10 @@ html {
 a {
   text-decoration: none;
 }
-
+@font-face {
+  font-family: cairo;
+  src: url(CairoPlay-ExtraBold.ttf);
+}
 @font-face {
   font-family: BE;
   src: url(BalooThambi2-ExtraBold.ttf);
