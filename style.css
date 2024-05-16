@@ -221,11 +221,11 @@ a {
   margin-top: 15px;
 }
 * .section .container .card-lecture .lecture-lec .x-lecture {
-  background-color: rgba(250, 9, 9, 0.698) !important;
+  background-color: #ff6f6fb2 !important;
 
 }
 * .section .container .card-lecture .lecture-lec .x-lecture:visited {
-  background-color: rgba(250, 9, 9, 0.698) !important;
+  background-color: #ff6f6fb2 !important;
 }
 * .section .container .card-lecture .lecture-lec .lecture-link .icon-b {
   color: #000;
