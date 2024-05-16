@@ -246,18 +246,22 @@ a {
   color: #fffafa;
 }
 * .section .container .card-lecture .lecture-lec .x-lecture {
-  background-color: rgba(250, 9, 9, 0.698) !important;
+  background-color:rgba(255, 111, 111, 0.698) !important;
 
 }
 * .section .container .card-lecture .lecture-lec .x-lecture:visited {
-  background-color: rgba(250, 9, 9, 0.698) !important;
+  background-color:rgba(255, 111, 111, 0.698) !important;
 }
 
 * .section .container .card-lecture .lecture-lec .x-lecture .icon-b {
   color: #fffafa !important;
 }
+* .section .container .card-lecture .lecture-lec .x-lecture span {
+  color: #fffafa !important;
+}
 * .section .container .card-lecture .lecture-lec .x-lecture:visited span {
   color: #fffafa !important;
+}
 }
 /* lectures plus labs */
 * .section .container .card-lecture .lecture-lec .box-lecture {
