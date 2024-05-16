@@ -220,6 +220,13 @@ a {
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3882352941);
   margin-top: 15px;
 }
+* .section .container .card-lecture .lecture-lec .x-lecture {
+  background-color: rgba(250, 9, 9, 0.698) !important;
+
+}
+* .section .container .card-lecture .lecture-lec .x-lecture:visited {
+  background-color: rgba(250, 9, 9, 0.698) !important;
+}
 * .section .container .card-lecture .lecture-lec .lecture-link .icon-b {
   color: #000;
   font-size: 1.9rem;
