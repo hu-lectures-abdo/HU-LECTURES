@@ -83,8 +83,8 @@ body section h1 span:nth-child(1)::after{
           animation-delay: 2.75s;
 }
 * body section h1 span:nth-child(6) {
-  -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 * body section h1 span:nth-child(7) {
   -webkit-animation-delay: 4.2s;
