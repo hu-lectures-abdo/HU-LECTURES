@@ -176,7 +176,7 @@ body section h1 span:nth-child(1)::after{
       * body section h1 {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 48px;
+        font-size: 40px;
         font-family: sans-serif;
       }
       * .link-box a  {
@@ -187,7 +187,7 @@ body section h1 span:nth-child(1)::after{
       * body section h1 {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 45px;
+        font-size: 37px;
         font-family: sans-serif;
       }
      
@@ -196,7 +196,7 @@ body section h1 span:nth-child(1)::after{
       * body section h1 {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 32px;
         font-family: sans-serif;
       }
     }
@@ -204,7 +204,7 @@ body section h1 span:nth-child(1)::after{
       * body section h1 {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 35px;
+        font-size: 27px;
         font-family: sans-serif;
       }
     }
@@ -212,7 +212,7 @@ body section h1 span:nth-child(1)::after{
       * body section h1 {
         display: inline-block;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 25px;
         font-family: sans-serif;
       }
     }
