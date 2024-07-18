@@ -20,10 +20,20 @@
   width: 100%;
   min-height: 200vh;
   background-color: var(--bg);
+  position: relative;
+}
+* body nav.active {
+  transform: translateX(0%);
+  transition: 0.1s;
+}
+* body nav.cancello {
+  transform: translateX(-100%);
+  transition: 0.1s;
 }
 * body nav {
   width: var(--width-nav-a);
   height: 100vh;
+  transform: translateX(-100%);
   background-color: var(--bg-nav);
   color: var(--color-nav);
   font-family: var(--font-f);
@@ -32,6 +42,7 @@
   overflow: clip;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 * body nav a {
   color: var(--color-nav);
@@ -257,4 +268,89 @@
   font-family: sans-serif;
   text-decoration: underline;
   margin-bottom: 6px;
+}
+* body .container {
+  min-height: 100vh;
+  width: 100%;
+}
+* body .container .slider-click-btn {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(var(--header-height) + 8px);
+  background-color: rgb(21, 7, 61);
+  padding-inline: 10px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+* body .container .slider-click-btn .logo {
+  font-family: sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--bg-nav);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+* body .container .slider-click-btn .btn {
+  /* burger-1 */
+}
+* body .container .slider-click-btn .btn .button {
+  border: 0;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  scale: 1;
+  border-radius: 8px;
+  transition: 0.25s;
+}
+* body .container .slider-click-btn .btn .burger {
+  position: relative;
+  width: 32px;
+  border: 0;
+}
+* body .container .slider-click-btn .btn .burger,
+* body .container .slider-click-btn .btn .burger::before,
+* body .container .slider-click-btn .btn .burger::after {
+  display: block;
+  border-radius: 2px;
+  height: 2px;
+  background: var(--bg);
+  transition: 0.3s;
+}
+* body .container .slider-click-btn .btn .burger::before,
+* body .container .slider-click-btn .btn .burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+* body .container .slider-click-btn .btn .burger::before {
+  top: -8px;
+}
+* body .container .slider-click-btn .btn .burger::after {
+  top: 8px;
+}
+* body .container .slider-click-btn .btn .burger.burger-1,
+* body .container .slider-click-btn .btn .burger.burger-1::before,
+* body .container .slider-click-btn .btn .burger.burger-1::after {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+* body .container .slider-click-btn .btn .burger.burger-1.is-closed {
+  transform: translateX(-50px);
+  background: transparent;
+}
+* body .container .slider-click-btn .btn .burger.burger-1.is-closed::before {
+  transform: rotate(-45deg) translate(30px, 40px);
+}
+* body .container .slider-click-btn .btn .burger.burger-1.is-closed::after {
+  transform: rotate(45deg) translate(30px, -42px);
 }/*# sourceMappingURL=NAV.css.map */
