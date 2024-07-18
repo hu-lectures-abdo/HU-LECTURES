@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
       </head>
       <body>
-        <nav>
+        <nav class='cancello'>
             <div class="header">
                 <span class="logo-hu logo"><a href="#">hu</a></span>
                 <span class="logo-abdo logo"><a href="#">abdo</a></span>
@@ -21,10 +21,10 @@
                   <input type="search" name="search" id="search_input" placeholder="Search . . .">
                 </div>
                 <div class="box-search-result"> 
-                    <h1>A</h1>  
-                    <h1>A</h1>  
-                    <h1>A</h1>  
-                    <h1>A</h1>   
+                    <h1>[object:1110]</h1>  
+                    <h1>vx~x12</h1>  
+                    <h1>vx~x12</h1>  
+                    <h1>vx~x12</h1>   
                 </div>
               </div>
                 <div class="links-box">
@@ -37,22 +37,41 @@
                             <li class="sub-li"><a href="#">physiology</a></li>
                             <li class="sub-li"><a href="#">hydrotherapy</a></li>
                             <li class="sub-li"><a href="#">biochemistry</a></li>
-                            <li class="sub-li"><a href="#">comunity health</a></li>
+                            <li class="sub-li"><a href="#">community health</a></li>
                             <li class="sub-li"><a href="#">ethics and lows</a></li>
                             <li class="sub-li"><a href="#">biochemistry</a></li>
                             <li class="sub-li"><a href="#">computer skills</a></li>
                         </ul>
                     </div>
-                        <a href="#"class="main-li"><p ><span><ion-icon name="settings-outline"></ion-icon></span><span>settings</span> </p></a>
-                        <a href="#" class="main-li"><p ><span><ion-icon name="moon-outline"></ion-icon></span><span>dark mode</span></p>
+                        <a href="#"class="main-li ">
+                          <p ><span><ion-icon name="settings-outline"></ion-icon></span><span>settings</span> </p></a>
+                          <a href="#"  class="main-li mode"><p >
+                            <span id="icon_mode"><ion-icon name="moon-outline"></ion-icon></span>
+                            <span id="text_mode">dark mode</span></p>
                             <span class="switch-4">
-                                <input id="switch-round" type="checkbox" />
+                              <input id="switch-round" type="checkbox"  />
                                 <label for="switch-round"></label>
                               </span>
                             </p></a>
                 </div>
-        </nav>
+        </nav >
+        <div class="container">
+          <div class="slider-click-btn">
+           <a href="#" class="logo"><span >HU</span></a>
+            <div class="slider">slider...</div>
+            <span id="btn" class="btn">
+              <button
+              onclick="this.querySelector('span').classList.toggle('is-closed')"
+              class="button"
+            >
+              <span class="burger burger-1"></span>
+            </button>
+         
+            </span>
+          </div>
+        </div>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
