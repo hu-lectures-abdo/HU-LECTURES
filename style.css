@@ -150,10 +150,8 @@
   border-radius: 8px;
   font-size: 20px;
 }
-* body nav .links-box .main-li:nth-child(5) {
   /* To hide the checkbox */
   /* Switch background change */
-}
 * body nav .links-box .main-li:nth-child(5) .switch-4 {
   display: inline-block;
   scale: 0.7;
@@ -295,9 +293,7 @@
      -moz-user-select: none;
           user-select: none;
 }
-* body .container .slider-click-btn .btn {
   /* burger-1 */
-}
 * body .container .slider-click-btn .btn .button {
   border: 0;
   width: 56px;
