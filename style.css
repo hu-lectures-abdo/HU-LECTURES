@@ -6,9 +6,9 @@
   --color-nav:#272727;
   --width-nav-a: 250px;
   --font-f: "Poppins", sans-serif;
-  --header-height:70px;
-  --search-bar:200px;
-  --input-search-height: 53px;
+  --header-height:9vh;
+  --search-bar:30vh;
+  --input-search-height: 8vh;
 }
 
 * {
@@ -23,7 +23,7 @@
 }
 * body nav {
   width: var(--width-nav-a);
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--bg-nav);
   color: var(--color-nav);
   font-family: var(--font-f);
@@ -105,7 +105,7 @@
 * body nav .search-bar .box-search-result {
   width: 100%;
   min-height: 0px;
-  max-height: calc(180px - var(--input-search-height));
+  max-height: 22vh;
   background-color: #eee1ff;
   transition: 0.1s;
   overflow-y: auto;
@@ -125,14 +125,12 @@
 }
 * body nav .links-box {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 60vh;
   padding-top: 3px;
-  flex-grow: 1;
 }
 * body nav .links-box .main-li {
   width: 95%;
-  height: 45px;
+  height: 6vh;
   margin-bottom: 5px;
   display: flex;
   align-items: center;
@@ -233,7 +231,7 @@
 }
 * body nav .links-box .sub {
   width: 90%;
-  height: 170px;
+  height: 27vh;
   flex-basis: 200px;
   margin-left: 5%;
   padding-left: 40px;
@@ -259,59 +257,4 @@
   font-family: sans-serif;
   text-decoration: underline;
   margin-bottom: 6px;
-}
-
-@media (max-width: 1440px) {
-  :root {
-    --header-height:60px;
-  }
-  * body nav .header {
-    height: var(--header-height);
-  }
-  * body nav .links-box .main-li {
-    height: 42px;
-  }
-}
-@media (max-width: 1024px) {
-  :root {
-    --header-height:53px;
-    --search-bar:200px;
-    --input-search-height: 43px;
-  }
-  * body nav .header {
-    height: var(--header-height);
-  }
-  * body nav .header .logo a {
-    font-size: 42px;
-  }
-  * body nav .header .logo:nth-child(2) a {
-    font-size: 30px;
-  }
-  * body nav .links-box .main-li {
-    height: 34px;
-  }
-  * body nav .search-bar {
-    margin-top: 2px;
-  }
-  * body nav .search-bar .search-box input {
-    height: var(--input-search-height);
-  }
-  * body nav .search-bar .box-search-result {
-    max-height: calc(170px - var(--input-search-height));
-    background-color: #eee1ff;
-    transition: 0.1s;
-    overflow-y: auto;
-  }
-  * body nav .links-box .sub {
-    width: 90%;
-    height: 160px;
-    flex-basis: 200px;
-    margin-left: 5%;
-    padding-left: 40px;
-    overflow: auto;
-    margin-bottom: 4px;
-  }
-  * body nav .links-box .main-li {
-    height: 36px;
-  }
 }/*# sourceMappingURL=NAV.css.map */
