@@ -1,25 +1,30 @@
 // nav bar btn 
 let btn_nav = document.getElementById('btn');
 let nav_bar = document.querySelector('nav');
+let arrow_a = document.querySelector('.arrow-a');
 btn_nav.addEventListener('click' , function(){
+
     if(nav_bar.classList.contains('cancello')){
-        nav_bar.classList.remove('cancello');
-        nav_bar.classList.add('active');
+      nav_bar.classList.remove('cancello');
+      nav_bar.classList.add('active');
     }else {
-        nav_bar.classList.remove('active');
-        nav_bar.classList.add('cancello');
+      nav_bar.classList.remove('active');
+      nav_bar.classList.add('cancello');
     }
-})
+  })
+  
 // 
 let arrow = document.querySelector('.li-sub-main');
 let sub = document.querySelector('.sub');
 arrow.addEventListener('click', function(){
-    if(sub.classList.contains('cancello')){
-        sub.classList.remove('cancello');
-        sub.classList.add('active');
-    }else {
-        sub.classList.remove('active');
-        sub.classList.add('cancello');
+  if(sub.classList.contains('cancello')){
+    sub.classList.remove('cancello');
+    sub.classList.add('active');
+    arrow_a.innerHTML =  `<ion-icon name="chevron-up-outline"></ion-icon>`
+  }else {
+    sub.classList.remove('active');
+      sub.classList.add('cancello');
+      arrow_a.innerHTML =  `<ion-icon name="chevron-down-outline"></ion-icon>`
     }})
 // 
 let a_mode = document.querySelector('.mode');
