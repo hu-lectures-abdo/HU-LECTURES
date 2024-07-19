@@ -26,7 +26,7 @@
 }
 * body nav.active {
   transform: translateX(0%);
-  transition: 0.1s;
+  transition: 00.1s;
 }
 * body nav.cancello {
   transform: translateX(-100%);
