@@ -15,6 +15,8 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 7px);
 }
 * body {
   width: 100%;
@@ -118,7 +120,8 @@
   width: 100%;
   min-height: 0px;
   max-height: 22vh;
-  background-color: #eee1ff;
+  background-color: var(--bg-nav);
+  padding-left: 5px;
   transition: 0.1s;
   overflow-y: auto;
 }
@@ -155,7 +158,10 @@
   transform: translate(70px, 6px);
   font-size: 23px;
 }
-
+* body nav .links-box .main-li:nth-child(5) {
+  /* To hide the checkbox */
+  /* Switch background change */
+}
 * body nav .links-box .main-li:nth-child(5) .block {
   width: 55px;
   height: 30px;
@@ -290,6 +296,7 @@
   margin-bottom: 6px;
 }
 * body .container {
+  padding-top: 100vh;
   min-height: 100vh;
   width: 100%;
 }
@@ -315,7 +322,9 @@
      -moz-user-select: none;
           user-select: none;
 }
-
+* body .container .slider-click-btn .btn {
+  /* burger-1 */
+}
 * body .container .slider-click-btn .btn .button {
   border: 0;
   width: 56px;
