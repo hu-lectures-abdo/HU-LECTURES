@@ -11,6 +11,17 @@ btn_nav.addEventListener('click' , function(){
     }
 })
 // 
+let arrow = document.querySelector('.li-sub-main');
+let sub = document.querySelector('.sub');
+arrow.addEventListener('click', function(){
+    if(sub.classList.contains('cancello')){
+        sub.classList.remove('cancello');
+        sub.classList.add('active');
+    }else {
+        sub.classList.remove('active');
+        sub.classList.add('cancello');
+    }})
+// 
 let a_mode = document.querySelector('.mode');
 let switch_btn = document.getElementById('switch-round');
 a_mode.addEventListener('click', function(){
@@ -32,7 +43,7 @@ a_mode.addEventListener('click', function(){
     }else {
         icon_mode.innerHTML = `<ion-icon name="moon-outline"></ion-icon>`
         text_mode.innerHTML = `dark mode`
-        document.body.style.background = '#daeaf7';
+        document.body.style.background = '#fff';
 
     }
 }  )
