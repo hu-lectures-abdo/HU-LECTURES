@@ -3,6 +3,7 @@
   --bg:#daeaf7;
   --color:#000;
   --bg-nav:#f6f5ff;
+  --bg-result:#ebeaf1;
   --color-nav:#272727;
   --width-nav-a: 250px;
   --font-f: "Poppins", sans-serif;
@@ -26,7 +27,7 @@
 }
 * body nav.active {
   transform: translateX(0%);
-  transition: 00.1s;
+  transition: 0.1s;
 }
 * body nav.cancello {
   transform: translateX(-100%);
@@ -120,7 +121,7 @@
   width: 100%;
   min-height: 0px;
   max-height: 22vh;
-  background-color: var(--bg-nav);
+  background-color: var(--bg-result);
   padding-left: 5px;
   transition: 0.1s;
   overflow-y: auto;
@@ -261,17 +262,18 @@
 * body nav .links-box .sub.active {
   height: 27vh;
   transition: 0.1s;
+  padding-top: 8px;
 }
 * body nav .links-box .sub.cancello {
   height: 0vh;
   transition: 0.1s;
 }
 * body nav .links-box .sub {
-  width: 90%;
+  width: 100%;
   height: 0vh;
   flex-basis: 200px;
-  margin-left: 5%;
-  padding-left: 40px;
+  background-color: var(--bg-result);
+  padding-left: 44px;
   overflow: auto;
   margin-bottom: 4px;
 }
@@ -290,10 +292,26 @@
 }
 * body nav .links-box .sub ul li {
   list-style: none;
-  font-size: 19px;
+  font-size: 18px;
   font-family: sans-serif;
-  text-decoration: underline;
   margin-bottom: 6px;
+  line-height: 28px;
+}
+* body nav .links-box .sub ul li a:hover {
+  font-size: 19px;
+  margin-left: 8px;
+  transition: 0.1s;
+  letter-spacing: 1px;
+  position: relative;
+}
+* body nav .links-box .sub ul li a:hover::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 1px;
+  width: 3px;
+  height: 100%;
+  background-color: #000;
 }
 * body .container {
   padding-top: 100vh;
