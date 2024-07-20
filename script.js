@@ -110,6 +110,13 @@ function dark_mode(){
   let logo_h = document.querySelectorAll('.logo a');
   let logo_abdo = document.querySelector('.logo-abdo');
   let main_li = document.querySelectorAll('.main-li');
+  let search_box = document.querySelector('.search-box');
+  let search_box_input = document.querySelector('.search-box input');
+  let sub = document.querySelector('.sub');
+  let sub_a = document.querySelectorAll('.sub a');
+
+  // 
+
   document.body.style.background = '#383435';
   nav.style.backgroundColor = '#353132';
   main_li.forEach((e)=> {
@@ -118,7 +125,15 @@ function dark_mode(){
   logo_h.forEach((e)=> {
     e.style.color ='#fff';
   })
-logo_abdo.style.borderLeft = '2px solid #fff'
+  logo_abdo.style.borderLeft = '2px solid #fff';
+  search_box.style.backgroundColor = '#91898c'
+  search_box.style.color = '#fff';
+  search_box_input.style.color ='#fff';
+  sub.style.backgroundColor = `#585151`;
+  sub_a.forEach((e)=> {
+  e.style.color =`#fff`;
+})
+
   
 }
 function light_mode(){
@@ -126,6 +141,15 @@ function light_mode(){
   let logo_h = document.querySelectorAll('.logo a');
   let logo_abdo = document.querySelector('.logo-abdo');
   let main_li = document.querySelectorAll('.main-li');
+  let search_box = document.querySelector('.search-box');
+  let search_box_input = document.querySelector('.search-box input');
+  let sub = document.querySelector('.sub');
+  let sub_a = document.querySelectorAll('.sub a');
+
+  // 
+
+
+  document.body.style.background = '#383435';
   document.body.style.background = '#daeaf7';
   nav.style.backgroundColor = '#f6f5ff';
   main_li.forEach((e)=> {
@@ -134,6 +158,14 @@ function light_mode(){
   logo_h.forEach((e)=> {
     e.style.color ='#000';
   })
-  logo_abdo.style.borderLeft = '2px solid #000'
+  logo_abdo.style.borderLeft = '2px solid #000';
+  search_box.style.backgroundColor = '#cfcfd1'
+  search_box.style.color = '#000';
+  search_box_input.style.color ='#000';
+  sub.style.backgroundColor = `#ebeaf1`;
+  sub_a.forEach((e)=> {
+  e.style.color =`#000`;
+})
+
 
 }
