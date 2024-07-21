@@ -46,7 +46,7 @@ let text_mode = document.getElementById("text_mode");
 if (localStorage.getItem("check")) {
   icon_mode.innerHTML = `<ion-icon name="sunny-outline"></ion-icon>`;
   text_mode.innerHTML = `light mode`;
-  dark_mode()
+  dark_mode();
 }
 a_mode.addEventListener("click", function () {
   if (switch_btn.getAttribute("checked") == "true") {
@@ -105,67 +105,76 @@ function ch() {
     });
   }
 }
-function dark_mode(){
-  let nav = document.querySelector('nav');
-  let logo_h = document.querySelectorAll('.logo a');
-  let logo_abdo = document.querySelector('.logo-abdo');
-  let main_li = document.querySelectorAll('.main-li');
-  let search_box = document.querySelector('.search-box');
-  let search_box_input = document.querySelector('.search-box input');
-  let sub = document.querySelector('.sub');
-  let sub_a = document.querySelectorAll('.sub a');
+function dark_mode() {
+  let nav = document.querySelector("nav");
+  let logo_h = document.querySelectorAll(".logo a");
+  let logo_abdo = document.querySelector(".logo-abdo");
+  let main_li = document.querySelectorAll(".main-li");
+  let search_box = document.querySelector(".search-box");
+  let search_box_input = document.querySelector(".search-box input");
+  let sub = document.querySelector(".sub");
+  let sub_a = document.querySelectorAll(".sub a");
+  let auto = document.querySelector(".auto-writing");
+  let app = document.querySelector("#particles-js");
+  app.style.width = "100%";
 
-  // 
+  //
 
-  document.body.style.background = '#383435';
-  nav.style.backgroundColor = '#353132';
-  main_li.forEach((e)=> {
-    e.style.color ='#fff'
-  })
-  logo_h.forEach((e)=> {
-    e.style.color ='#fff';
-  })
-  logo_abdo.style.borderLeft = '2px solid #fff';
-  search_box.style.backgroundColor = '#91898c'
-  search_box.style.color = '#fff';
-  search_box_input.style.color ='#fff';
+  document.body.style.background = "#292626";
+  nav.style.backgroundColor = "#353132";
+  main_li.forEach((e) => {
+    e.style.color = "#fff";
+  });
+  logo_h.forEach((e) => {
+    e.style.color = "#fff";
+  });
+  logo_abdo.style.borderLeft = "2px solid #fff";
+  search_box.style.backgroundColor = "#91898c";
+  search_box.style.color = "#fff";
+  search_box_input.style.color = "#fff";
   sub.style.backgroundColor = `#585151`;
-  sub_a.forEach((e)=> {
-  e.style.color =`#fff`;
-})
-
-  
+  sub_a.forEach((e) => {
+    e.style.color = `#fff`;
+  });
+  auto.style.color = '#fff';
 }
-function light_mode(){
-  let nav = document.querySelector('nav');
-  let logo_h = document.querySelectorAll('.logo a');
-  let logo_abdo = document.querySelector('.logo-abdo');
-  let main_li = document.querySelectorAll('.main-li');
-  let search_box = document.querySelector('.search-box');
-  let search_box_input = document.querySelector('.search-box input');
-  let sub = document.querySelector('.sub');
-  let sub_a = document.querySelectorAll('.sub a');
+function light_mode() {
+  let nav = document.querySelector("nav");
+  let logo_h = document.querySelectorAll(".logo a");
+  let logo_abdo = document.querySelector(".logo-abdo");
+  let main_li = document.querySelectorAll(".main-li");
+  let search_box = document.querySelector(".search-box");
+  let search_box_input = document.querySelector(".search-box input");
+  let sub = document.querySelector(".sub");
+  let sub_a = document.querySelectorAll(".sub a");
+  let app = document.querySelector("#particles-js");
+  app.style.width = "0%";
 
-  // 
+  //
 
-
-  document.body.style.background = '#383435';
-  document.body.style.background = '#daeaf7';
-  nav.style.backgroundColor = '#f6f5ff';
-  main_li.forEach((e)=> {
-    e.style.color ='#000'
-  })
-  logo_h.forEach((e)=> {
-    e.style.color ='#000';
-  })
-  logo_abdo.style.borderLeft = '2px solid #000';
-  search_box.style.backgroundColor = '#cfcfd1'
-  search_box.style.color = '#000';
-  search_box_input.style.color ='#000';
+  document.body.style.background = "#e6eff5";
+  nav.style.backgroundColor = "#f6f5ff";
+  main_li.forEach((e) => {
+    e.style.color = "#000";
+  });
+  logo_h.forEach((e) => {
+    e.style.color = "#000";
+  });
+  logo_abdo.style.borderLeft = "2px solid #000";
+  search_box.style.backgroundColor = "#cfcfd1";
+  search_box.style.color = "#000";
+  search_box_input.style.color = "#000";
   sub.style.backgroundColor = `#ebeaf1`;
-  sub_a.forEach((e)=> {
-  e.style.color =`#000`;
-})
-
-
+  sub_a.forEach((e) => {
+    e.style.color = `#000`;
+  });
+  let auto = document.querySelector(".auto-writing");
+  auto.style.color = '#000';
 }
+
+let counter = setInterval(() => {
+  let date = document.querySelector("footer span");
+  let d = moment(new Date()).format("L");
+  let t = moment(new Date()).format("LT");
+  date.innerHTML = `${d} ${t}`;
+}, 1000);
