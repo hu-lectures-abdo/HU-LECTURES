@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="NAV.css">
       </head>
       <body>
         <nav class='cancello'>
@@ -27,15 +27,15 @@
                 <div class="links-box">
                       
                     <a href="https://hu-lectures-abdo.github.io/menu-semesters/" class="main-li"><p ><span><ion-icon name="tablet-landscape-outline"></ion-icon></span><span>dashboard</span> </p></a>
-                    <a href="#"class="main-li li-sub-main "> <p ><span><ion-icon name="bookmark-outline"></ion-icon></span><span>subjects</span><span class="arrow-a"><ion-icon name="chevron-down-outline"></ion-icon></span></p></a>
+                    <a style="cursor: pointer;" class="main-li li-sub-main "> <p ><span><ion-icon name="bookmark-outline"></ion-icon></span><span>subjects</span><span class="arrow-a"><ion-icon name="chevron-down-outline"></ion-icon></span></p></a>
                     <div class="sub cancello">
                         <ul>
-                            <li class="sub-li"><a href="#" data-name="anatomy">anatomy</a></li>
-                            <li class="sub-li"><a href="#" data-name="physiology">physiology</a></li>
-                            <li class="sub-li"><a href="#" data-name="hydrotherapy">hydrotherapy</a></li>
-                            <li class="sub-li"><a href="#"data-name="biochemistry">biochemistry</a></li>
-                            <li class="sub-li"><a href="#"data-name="community health">community health</a></li>
-                            <li class="sub-li"><a href="#" data-name="ethics and lows">ethics and lows</a></li>
+                            <li class="sub-li"><a href="#sub_one" data-name="anatomy">anatomy</a></li>
+                            <li class="sub-li"><a href="#sub_two" data-name="physiology">physiology</a></li>
+                            <li class="sub-li"><a href="#sub_three" data-name="hydrotherapy">hydrotherapy</a></li>
+                            <li class="sub-li"><a href="#sub_four"data-name="biochemistry">biochemistry</a></li>
+                            <li class="sub-li"><a href="#sub_five"data-name="community health">community health</a></li>
+                            <li class="sub-li"><a href="#sub_six" data-name="ethics and lows">ethics and lows</a></li>
                             <li class="sub-li"><a href="#"data-name="biochemistry">biochemistry</a></li>
                             <li class="sub-li"><a href="#"data-name="computer skills">computer skills</a></li>
                         </ul>
@@ -76,15 +76,50 @@
             </span>
           </div>
           <!-- body ----------- -->
-         <a href="https://hu-lectures-abdo.github.io/HU-LECTURES/"> <h1><span>lecture-1</span></h1> </a>
-         <a href="#0"> <h1><span>laba-2</span></h1></a>
-         <a href="#0"> <h1><span>lace-3</span></h1></a>
-         <a href="#0"> <h1><span>ladd-4</span></h1></a>
-         <a href="#0"> <h1><span>laed-5</span></h1></a>
-         <a href="#0"> <h1><span>laff-6</span></h1></a>
-        </div>
+          <!-- general sec -->
+          <div class="sec g-sec">
+            <div id="particles-js"></div>
+            <div class="auto-writing">
+              <div id="app">
+                <span id="ityped"></span>
+            </div>
+            </div>
+          </div>
+          <div class=" sec sub-1">
+
+
+           </div>
+           <div class=" sec sub-2" id="sub_one">section-1</div>
+           <div class=" sec sub-3" id="sub_two">section-2</div>
+           <div class=" sec sub-4" id="sub_three">section-3</div>
+           <div class=" sec sub-5" id="sub_four">section-4</div>
+           <div class=" sec sub-6" id="sub_five">section-5</div>
+           <div class=" sec sub-7" id="sub_six">section-6</div>
+           
+          </div>
+        <!-- footerrrr -->
+        <footer>
+          abdo
+          <span></span>
+         </footer>
+         <script src="particles.js"></script>
+         <script src="app.js"></script>
+        <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="ityped.js"></script>
+        <script>
+          ityped.init(document.querySelector("#ityped"), {
+      strings: [`!DOCTYPE html` ,  ' charset="UTF-8"' ,'style.css','particles.js','A!B!D!O' ," welcome to HU lectures <beta version>",],
+      loop: false
+  })
+      </script>
         <script src="script.js"></script>
 </body>
 </html>
+        <!-- <a href="https://hu-lectures-abdo.github.io/HU-LECTURES/"> <h1><span>lecture-1</span></h1> </a>
+        <a href="#0"> <h1><span>laba-2</span></h1></a>
+        <a href="#0"> <h1><span>lace-3</span></h1></a>
+        <a href="#0"> <h1><span>ladd-4</span></h1></a>
+        <a href="#0"> <h1><span>laed-5</span></h1></a>
+        <a href="#0"> <h1><span>laff-6</span></h1></a> -->
