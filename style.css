@@ -515,7 +515,7 @@
   flex-direction: column;
 }
 * body .container .g-sec .content .title {
-  margin-top: 6vh;
+  margin-top: 5vh;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -535,10 +535,10 @@
   border-width: 4px 0;
   padding: 0.5em 0em;
   color: #000;
-  width: 40em;
+  width: 45em;
 }
 * body .container .g-sec .content .title p span {
-  font: 700 3em/1 "Oswald", sans-serif;
+  font: 700 4em/1 "Oswald", sans-serif;
   letter-spacing: 0;
   padding: 0.25em 0 0.325em;
   display: block;
@@ -582,18 +582,53 @@
     height: 40px;
   }
 }
-@media (max-width: 502px) {
-  * body .container .g-sec .content .title {
-    font: 400 11px "Neuton";
+@media (max-width: 540px) {
+  * body .container .g-sec .content .title p span {
+    font: 700 3.8em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 40em;
   }
 }
-@media (max-width: 450px) {
-  * body .container .g-sec .content .title {
-    font: 400 10px "Neuton";
+@media (max-width: 490px) {
+  * body .container .g-sec .content .title p span {
+    font: 700 3.5em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 36em;
   }
 }
-@media (max-width: 410px) {
-  * body .container .g-sec .content .title {
-    font: 400 9px "Neuton";
+@media (max-width: 440px) {
+  * body .container .g-sec .content .title p span {
+    font: 700 3.4em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 35em;
+  }
+}
+@media (max-width: 431px) {
+  * body .container .g-sec .content .title p span {
+    font: 700 3.36em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 34em;
+  }
+}
+@media (max-width: 414px) {
+  * body .container .g-sec .content .title p span {
+    font: 750 3.2em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 34em;
+    padding-right: 7px;
+  }
+}
+@media (max-width: 403px) {
+  * body .container .g-sec .content .title p span {
+    font: 800 3.1em/1 "Oswald", sans-serif;
+  }
+  * body .container .g-sec .content .title p {
+    width: 30em;
+    padding-right: 7px;
   }
 }/*# sourceMappingURL=NAV.css.map */
