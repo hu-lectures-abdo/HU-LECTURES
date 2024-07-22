@@ -1,129 +1,193 @@
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="R.jpeg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-        <nav class='cancello'>
-            <div class="header">
-                <span class="logo-hu logo"><a href="#">hu</a></span>
-                <span class="logo-abdo logo"><a href="#">abdo</a></span>
-            </div>
-            <div class="search-bar">
-                <div class="search-box">
-                  <span><ion-icon name="search-outline"></ion-icon></span>
-                  <input type="search" name="search" id="search" placeholder="Search . . .">
-                </div>
-                <div class="box-search-result box-result"> 
-                    
-                </div>
-              </div>
-                <div class="links-box">
-                      
-                    <a href="https://hu-lectures-abdo.github.io/menu-semesters/" class="main-li"><p ><span><ion-icon name="tablet-landscape-outline"></ion-icon></span><span>dashboard</span> </p></a>
-                    <a style="cursor: pointer;" class="main-li li-sub-main "> <p ><span><ion-icon name="bookmark-outline"></ion-icon></span><span>subjects</span><span class="arrow-a"><ion-icon name="chevron-down-outline"></ion-icon></span></p></a>
-                    <div class="sub cancello">
-                        <ul>
-                            <li class="sub-li"><a href="#sub_one" data-name="anatomy">anatomy</a></li>
-                            <li class="sub-li"><a href="#sub_two" data-name="physiology">physiology</a></li>
-                            <li class="sub-li"><a href="#sub_three" data-name="hydrotherapy">hydrotherapy</a></li>
-                            <li class="sub-li"><a href="#sub_four"data-name="biochemistry">biochemistry</a></li>
-                            <li class="sub-li"><a href="#sub_five"data-name="community health">community health</a></li>
-                            <li class="sub-li"><a href="#sub_six" data-name="ethics and lows">ethics and lows</a></li>
-                            <li class="sub-li"><a href="#sub_seven"data-name="biochemistry">biochemistry</a></li>
-                            <li class="sub-li"><a href="#"data-name="computer skills">computer skills</a></li>
-                        </ul>
-                    </div>
-                        <a href="#"class="main-li ">
-                          <p ><span><ion-icon name="settings-outline"></ion-icon></span><span>settings</span> </p></a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="R.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="NAV.css" />
+  </head>
+  <body>
+    <nav class="cancello">
+      <div class="header">
+        <span class="logo-hu logo"><a href="#">hu</a></span>
+        <span class="logo-abdo logo"><a href="#">abdo</a></span>
+      </div>
+      <div class="search-bar">
+        <div class="search-box">
+          <span><ion-icon name="search-outline"></ion-icon></span>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search . . ."
+          />
+        </div>
+        <div class="box-search-result box-result"></div>
+      </div>
+      <div class="links-box">
+        <a
+          href="https://hu-lectures-abdo.github.io/menu-semesters/"
+          class="main-li"
+          ><p>
+            <span><ion-icon name="tablet-landscape-outline"></ion-icon></span
+            ><span>dashboard</span>
+          </p></a
+        >
+        <a style="cursor: pointer" class="main-li li-sub-main">
+          <p>
+            <span><ion-icon name="bookmark-outline"></ion-icon></span
+            ><span>subjects</span
+            ><span class="arrow-a"
+              ><ion-icon name="chevron-down-outline"></ion-icon
+            ></span></p
+        ></a>
+        <div class="sub cancello">
+          <ul>
+            <li class="sub-li">
+              <a href="#sub_one" data-name="anatomy">anatomy</a>
+            </li>
+            <li class="sub-li">
+              <a href="#sub_two" data-name="physiology">physiology</a>
+            </li>
+            <li class="sub-li">
+              <a href="#sub_three" data-name="hydrotherapy">hydrotherapy</a>
+            </li>
+            <li class="sub-li">
+              <a href="#sub_four" data-name="biochemistry">biochemistry</a>
+            </li>
+            <li class="sub-li">
+              <a href="#sub_five" data-name="community health"
+                >community health</a
+              >
+            </li>
+            <li class="sub-li">
+              <a href="#sub_six" data-name="ethics and lows">ethics and lows</a>
+            </li>
+            <li class="sub-li">
+              <a href="#sub_seven" data-name="biochemistry">biochemistry</a>
+            </li>
+            <li class="sub-li">
+              <a href="#" data-name="computer skills">computer skills</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="main-li">
+          <p>
+            <span><ion-icon name="settings-outline"></ion-icon></span
+            ><span>settings</span>
+          </p></a
+        >
 
+        <a href="#" class="main-li mode"
+          ><p>
+            <span id="icon_mode"
+              ><ion-icon name="moon-outline"></ion-icon
+            ></span>
+          </p>
 
-                          <a href="#"  class="main-li mode"><p >
-                            <span id="icon_mode"><ion-icon name="moon-outline"></ion-icon></span>
-                            <div class="block"></div>
-                            <span id="text_mode">dark mode</span>
-                            <span class="switch-4">
-                              <input id="switch-round" type="checkbox"/>
-                                <label for="switch-round"></label>
-                              </span>
-                            </a>
-                </div>
-        </nav >
-        <!-- ------------------- container  -->
-        <div class="container">
-          <!-- header-----------     -->
-          <div class="slider-click-btn">
-            <a href="#" class="logo"><span >HU</span></a>
-            <div class="slider">
-                    <!-- slider -->
-              <div class="wrapper">
-                <div class="item item2">heliopolis university</div>
-              </div>
-            </div>
-            <span id="btn" class="btn">
-              <button
-              onclick="this.querySelector('span').classList.toggle('is-closed')"
-              class="button"
-            >
-              <span class="burger burger-1"></span>
-            </button>
-            </span>
+          <div class="block"></div>
+          <span id="text_mode">dark mode</span>
+          <span class="switch-4">
+            <input id="switch-round" type="checkbox" />
+            <label for="switch-round"></label>
+          </span>
+        </a>
+      </div>
+    </nav>
+    <!-- ------------------- container  -->
+    <div class="container">
+      <!-- header-----------     -->
+      <div class="slider-click-btn">
+        <a href="#" class="logo"><span>HU</span></a>
+        <div class="slider">
+          <!-- slider -->
+          <div class="wrapper">
+            <div class="item item2">heliopolis university</div>
           </div>
-          <!-- body ----------- -->
-          <!-- general sec -->
-          <div class="sec g-sec">
-            <div id="particles-js"></div>
-            <div class="auto-writing">
+        </div>
+        <span id="btn" class="btn">
+          <button
+            onclick="this.querySelector('span').classList.toggle('is-closed')"
+            class="button"
+          >
+            <span class="burger burger-1"></span>
+          </button>
+        </span>
+      </div>
+      <!-- body ----------- -->
+      <!-- general sec -->
+      <div class="sec g-sec">
+        <div id="particles-js"></div>
+        <div class="auto-writing">
+          <div id="app">
+            <span id="ityped"></span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">
+            <p>
+              lectures of 2nd students hu
+              <span> physical therapy </span>
+              &mdash;heliopolis university&mdash;
+            </p>
+          </div>
+          <div class="boxs">
+            <div class="box-note">
+              <h1>messages:</h1>
               <div id="app">
-                <span id="ityped"></span>
-            </div>
-            </div>
-             <div class="content">
-              <div class="title">
-                <p>
-                  lectures of 2nd students hu
-                  <span>
-                    physical therapy
-                  </span>
-                  &mdash;heliopolis university&mdash;
-                </p>
+                <span id="ityed-mes"></span>
               </div>
-             </div>
+            </div>
+            <div class="box-text">
+              <div class="pl">
+                <div class="pl__dot pl__dot--a"></div>
+                <div class="pl__dot pl__dot--b"></div>
+                <div class="pl__dot pl__dot--c"></div>
+                <div class="pl__dot pl__dot--d"></div>
+              </div>
+            </div>
           </div>
-          <div class=" sec sub-2" id="sub_one">section-1</div>
-          <div class=" sec sub-3" id="sub_two">section-2</div>
-          <div class=" sec sub-4" id="sub_three">section-3</div>
-          <div class=" sec sub-5" id="sub_four">section-4</div>
-          <div class=" sec sub-6" id="sub_five">section-5</div>
-          <div class=" sec sub-7" id="sub_six">section-6</div>
-          <div class=" sec sub-8" id="sub_seven">section-7</div>
-           
-          </div>
-        <!-- footerrrr -->
-        <footer>
-          abdo
-          <span></span>
-         </footer>
-         <script src="particles.js"></script>
-         <script src="app.js"></script>
-        <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="ityped.js"></script>
-        <script>
-         
-        </script>
-        <script src="script.js"></script>
-</body>
+        </div>
+      </div>
+      <div class="sec sub-2" id="sub_one">section-1</div>
+      <div class="sec sub-3" id="sub_two">section-2</div>
+      <div class="sec sub-4" id="sub_three">section-3</div>
+      <div class="sec sub-5" id="sub_four">section-4</div>
+      <div class="sec sub-6" id="sub_five">section-5</div>
+      <div class="sec sub-7" id="sub_six">section-6</div>
+      <div class="sec sub-8" id="sub_seven">section-7</div>
+    </div>
+    <!-- footerrrr -->
+    <footer>
+      abdo
+      <span></span>
+    </footer>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="ityped.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-        <!-- <a href="https://hu-lectures-abdo.github.io/HU-LECTURES/"> <h1><span>lecture-1</span></h1> </a>
+<!-- <a href="https://hu-lectures-abdo.github.io/HU-LECTURES/"> <h1><span>lecture-1</span></h1> </a>
         <a href="#0"> <h1><span>laba-2</span></h1></a>
         <a href="#0"> <h1><span>lace-3</span></h1></a>
         <a href="#0"> <h1><span>ladd-4</span></h1></a>
