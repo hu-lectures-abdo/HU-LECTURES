@@ -26,7 +26,7 @@
   min-height: 100vh;
   background-color: var(--bg);
   position: relative;
-  touch-action: none;
+  
 }
 * body::before {
   --line: color-mix(in lch, canvasText 25%, transparent);
