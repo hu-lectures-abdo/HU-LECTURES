@@ -105,6 +105,10 @@ function ch() {
     });
   }
 }
+if(localStorage.length == 0){
+  let app = document.querySelector("#particles-js");
+  app.style.width = "0%";
+}
 function dark_mode() {
   let nav = document.querySelector("nav");
   let logo_h = document.querySelectorAll(".logo a");
@@ -117,6 +121,8 @@ function dark_mode() {
   let auto = document.querySelector(".auto-writing");
   let app = document.querySelector("#particles-js");
   app.style.width = "100%";
+  let title = document.querySelector('.title p');
+  let title_span = document.querySelector('.title p span');
 
   //
 
@@ -137,7 +143,12 @@ function dark_mode() {
     e.style.color = `#fff`;
   });
   auto.style.color = '#fff';
+  title.style.cssText = 'color:#ddd;border-top: 4px double #ddd;border-bottom: 4px double #ddd;';
+  title_span.style.cssText = '-webkit-text-fill-color: transparent;'
 }
+
+// 
+
 function light_mode() {
   let nav = document.querySelector("nav");
   let logo_h = document.querySelectorAll(".logo a");
@@ -149,10 +160,12 @@ function light_mode() {
   let sub_a = document.querySelectorAll(".sub a");
   let app = document.querySelector("#particles-js");
   app.style.width = "0%";
+  let title = document.querySelector('.title p');
+  let title_span = document.querySelector('.title p span');
 
   //
 
-  document.body.style.background = "#e6eff5";
+  document.body.style.background = "rgb(211 208 208 / 74%)";
   nav.style.backgroundColor = "#f6f5ff";
   main_li.forEach((e) => {
     e.style.color = "#000";
@@ -164,17 +177,28 @@ function light_mode() {
   search_box.style.backgroundColor = "#cfcfd1";
   search_box.style.color = "#000";
   search_box_input.style.color = "#000";
-  sub.style.backgroundColor = `#ebeaf1`;
+  // sub.style.backgroundColor = `rgb(211 208 208 / 74%)`;
   sub_a.forEach((e) => {
     e.style.color = `#000`;
   });
   let auto = document.querySelector(".auto-writing");
   auto.style.color = '#000';
+  title.style.cssText = 'color:#000;border-top: 4px double #000;border-bottom: 4px double #000;'
+  title_span.style.cssText = '-webkit-text-fill-color: #000;'
 }
+// 
 
-let counter = setInterval(() => {
-  let date = document.querySelector("footer span");
-  let d = moment(new Date()).format("L");
-  let t = moment(new Date()).format("LT");
-  date.innerHTML = `${d} ${t}`;
-}, 1000);
+  let counter = setInterval(() => {
+    let date = document.querySelector("footer span");
+    let d = moment(new Date()).format("L");
+    let t = moment(new Date()).format("LT");
+    return date.innerHTML = `${d} ${t}`;
+  }, 1000);
+  function tv(){
+    let t =   moment(new Date()).format("L");
+    return t
+  }
+  ityped.init(document.querySelector("#ityped"), {
+    strings: [`!DOCTYPE html` ,  ' charset="UTF-8"' ,'A|B|D|O' ,'...'," welcome to HU lectures ", `${tv()}`],
+    loop: false
+})
