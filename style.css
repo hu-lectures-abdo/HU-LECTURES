@@ -855,7 +855,7 @@
   right: 0;
   width: 30px;
   height: 30px;
-  font-size: 25px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,8 +889,8 @@
   }
 }
 .box-pig .box-alert .div-input {
-  width: 100%;
-  height: 48%;
+  width: 491px;
+  height: 174px;
   display: grid;
   place-content: center;
 }
