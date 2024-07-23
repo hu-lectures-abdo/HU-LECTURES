@@ -842,7 +842,7 @@
   background-color: rgba(141, 139, 139, 0.4588235294);
 }
 .box-pig .box-alert {
- width: 500px;
+  width: 500px;
   height: 300px;
   background-color: #ddd;
   padding: 5px;
@@ -854,7 +854,8 @@
   right: 0;
   width: 30px;
   height: 30px;
-  font-size: 28px;
+  font-size: 29px;
+  padding-right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -869,7 +870,8 @@
   text-transform: capitalize;
   padding-bottom: 20px;
 }
-.box-pig .box-alert .p-1, .box-pig .box-alert .p-2 {
+.box-pig .box-alert .p-1,
+.box-pig .box-alert .p-2 {
   font-size: 20px;
   padding-left: 20px;
   font-family: monospace;
@@ -888,10 +890,13 @@
   }
 }
 .box-pig .box-alert .div-input {
- width: 100%;
- height: 48%;
-  display: grid;
-  place-content: center;
+  width: 100%;
+  height: 48%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box-pig .box-alert .div-input input[type=text] {
   --w: 37px;
@@ -913,7 +918,7 @@
   outline: 0;
 }
 .box-pig .box-alert .div-input input[type=text]:focus-visible {
-  --c:#000;
+  --c: #000;
 }
 .box-pig .box-alert .mess-t-f {
   text-align: center;
