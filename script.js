@@ -250,18 +250,19 @@ box_pig.appendChild(box_alert);
 box_alert.prepend(h_1);
 box_alert.append(p_1);
 box_alert.append(p_2);
-box_alert.appendChild(div_input);
 box_alert.prepend(x);
+box_alert.appendChild(div_input);
+div_input.prepend(input);
 box_alert.appendChild(p);
-div_input.appendChild(input);
 document.body.append(box_pig);
 box_pig.remove(); //
 x.onclick = function () {
-  box_pig.remove(); //
+  box_pig.remove(); 
   p_1.innerHTML = "";
 };
 sett_btn.addEventListener("click", function () {
   document.body.append(box_pig);
+  input.focus()
   ityped.init(document.querySelector("#p_1"), {
     strings: [`inter the pass...!`],
     loop: false,
