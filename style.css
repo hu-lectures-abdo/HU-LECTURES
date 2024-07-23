@@ -896,7 +896,7 @@
 }
 .box-pig .box-alert .div-input input[type=text] {
   --w: 37px;
-  --g: .24em;
+  --g: 16px;
   --b: 2px;
   --n: 4;
   --c: #888;
