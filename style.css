@@ -892,33 +892,18 @@
 .box-pig .box-alert .div-input {
   width: 100%;
   height: 48%;
-  position: absolute;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.box-pig .box-alert .div-input input[type=text] {
-  --w: 37px;
-  --g: 16px;
-  --b: 2px;
-  --n: 4;
-  --c: #888;
-  font-size: 66px;
-  line-height: 100px;
-  line-height: 100px; /* control the height */
-  letter-spacing: var(--w);
-  font-family: monospace;
-  width: calc(var(--n) * (1ch + var(--w)));
-  padding-left: calc((var(--w) - var(--g)) / 2);
-  -webkit-clip-path: inset(0 calc(var(--w) / 2) 0 0);
-          clip-path: inset(0 calc(var(--w) / 2) 0 0);
-  background: repeating-linear-gradient(90deg, var(--c) 0 var(--b), rgba(0, 0, 0, 0) 0 calc(1ch + var(--w) - var(--g) - var(--b)), var(--c) 0 calc(1ch + var(--w) - var(--g)), rgba(0, 0, 0, 0) 0 2ch), conic-gradient(at calc(100% - var(--g) - 1px) var(--b), rgba(0, 0, 0, 0) 75%, var(--c) 0) 0 0/calc(1ch + var(--w)) calc(100% - var(--b));
+.box-pig .box-alert .div-input input {
+  padding: 10px;
+  outline: none;
   border: none;
-  outline: 0;
+  font-size: 24px;
 }
-.box-pig .box-alert .div-input input[type=text]:focus-visible {
-  --c: #000;
+.box-pig .box-alert .div-input input:focus {
+  border: 1px solid #000;
 }
 .box-pig .box-alert .mess-t-f {
   text-align: center;
