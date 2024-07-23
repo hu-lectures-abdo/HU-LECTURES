@@ -264,7 +264,7 @@ sett_btn.addEventListener("click", function () {
   document.body.append(box_pig);
   input.focus()
   ityped.init(document.querySelector("#p_1"), {
-    strings: [`inter the pass...!`],
+    strings: [`enter the pass...!`],
     loop: false,
   });
 });
