@@ -202,21 +202,6 @@ let counter = setInterval(() => {
   let t = moment(new Date()).format("LT");
   return (date.innerHTML = `${d} ${t}`);
 }, 1000);
-function tv() {
-  let t = moment(new Date()).format("LT");
-  return t;
-}
-ityped.init(document.querySelector("#ityped"), {
-  strings: [
-    `!DOCTYPE html`,
-    ' charset="UTF-8"',
-    "A|B|D|O",
-    " welcome to HU lectures ",
-    `${tv()}`,
-    " ...",
-  ],
-  loop: false,
-});
 setTimeout((_) => {
   ityped.init(document.querySelector("#ityed-mes"), {
     strings: [`beta version is devaloped by A|B|D|O`],
