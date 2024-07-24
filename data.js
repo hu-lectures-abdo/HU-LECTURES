@@ -5,7 +5,7 @@ let array_ = [
   ["zero_fawzy", "muhammed ahmed"],
   ["zero_mo-abdullah", "mohammed abdullah"],
   ["zero_nour", 'nour adel "الريس"'],
-  ["zero_salmaa", 'salmaa messallamy'],
+  ['zero_s', `SpongeBob`],
   ["zero_kero", "kero"],
 ];
 
@@ -153,7 +153,7 @@ function ch_sett() {
       document.oncontextmenu = function (e) {
         e.preventDefault();
       };
-    } else {
+    } else {lo
       document.oncontextmenu = function (e) {
         e;
       };
