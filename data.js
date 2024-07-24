@@ -4,7 +4,7 @@ let array_ = [
   ["zero_eyad", "اياد صيام PT"],
   ['zero_fawzy' , 'muhammed ahmed'],
   ["zero_mo-abdullah", "mohammed abdullah"],
-  ["zero_nour", 'nour adel "الحكومه"'],
+  ["zero_nour", 'nour adel "الريس"'],
   ["zero_salmaa", 'salmaa "سبونج بوب"'],
   ["zero_kero", "kero"],
 ];
