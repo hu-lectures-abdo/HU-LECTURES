@@ -1,8 +1,8 @@
 let array_ = [
-  ['zero_null','UserName']
+  ["zero_null", "UserName"],
   ["zero_islam", "ahmed islam"],
-  ["zero_fawzy", "muhammed ahemd"],
   ["zero_eyad", "اياد صيام PT"],
+  ['zero_fawzy' , 'muhammed ahmed'],
   ["zero_mo-abdullah", "mohammed abdullah"],
   ["zero_nour", 'nour adel "الحكومه"'],
   ["zero_salmaa", 'salmaa "سبونج بوب"'],
@@ -68,12 +68,12 @@ function local() {
   if (window.localStorage.getItem("access") == "admin") {
     let name_ = document.querySelector(".n-s");
     name_.innerHTML = "abdullah mamdouh";
-    let i = document.querySelector(".p-1").nextElementSibling;
+    let i_ = document.querySelector(".p-1").nextElementSibling;
     p.innerHTML = "passed!";
     p.style.color = `rgb(5 115 5)`;
     div_input.style.display = "none";
     p_end.style.display = "none";
-    i.remove();
+    i_.remove();
     p_1.remove();
     data();
     ityped.init(document.querySelector("#p_2"), {
@@ -84,11 +84,11 @@ function local() {
   }
   if (window.localStorage.getItem("access") == "user") {
     if (window.localStorage.getItem("userName")) {
-      let i = document.querySelector(".p-1").nextElementSibling;
+      let i_ = document.querySelector(".p-1").nextElementSibling;
       p.innerHTML = "user VIP access";
       p.style.color = `rgb(5 115 5)`;
       div_input.style.display = "none";
-      i.remove();
+      i_.remove();
       p_1.remove();
       ityped.init(document.querySelector("#p_2"), {
         strings: [`User: ${window.localStorage.getItem("userName")}`],
@@ -97,19 +97,16 @@ function local() {
     }
     //
   } else {
-    ch_sett();
     ch_dev = "f";
   }
 }
 function ch_sett() {
   input.addEventListener("input", function () {
-    let i = document.querySelector(".p-1").nextElementSibling;
     if (input.value === "8892" && input.value.length == 4) {
       p.innerHTML = "passed!";
       p.style.color = `rgb(5 115 5)`;
       div_input.style.display = "none";
       p_end.style.display = "none";
-      i.remove();
       p_1.remove();
       ityped.init(document.querySelector("#p_2"), {
         strings: [` DEV:Abdu11aH  `],
@@ -129,13 +126,14 @@ function ch_sett() {
         p.style.color = `rgb(149 6 6)`;
       }
     }
-    let i_ = document.querySelector(".p-1").nextElementSibling;
     for (let i = 0; i < array_.length; i++) {
       if (array_[i][0] === input.value.toLocaleLowerCase()) {
+        let i_ = document.querySelector(".p-1").nextElementSibling;
+        i_.remove();
         p.innerHTML = `VIP user`;
+        p_end.style.display = "none";
         p.style.color = `rgb(5 115 5)`;
         div_input.style.display = "none";
-        i_.remove();
         p_1.remove();
         ityped.init(document.querySelector("#p_2"), {
           strings: [`User: ${array_[i][1]}`],
@@ -149,7 +147,6 @@ function ch_sett() {
         }, 6000);
       }
     }
-
   });
   function v() {
     if (ch_dev === "f" || window.localStorage.getItem("access") !== "admin") {
