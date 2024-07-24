@@ -148,18 +148,18 @@ function ch_sett() {
       }
     }
   });
-  // function v() {
-  //   if (ch_dev === "f" || window.localStorage.getItem("access") !== "admin") {
-  //     document.oncontextmenu = function (e) {
-  //       e.preventDefault();
-  //     };
-  //   } else {
-  //     document.oncontextmenu = function (e) {
-  //       e;
-  //     };
-  //   }
-  // }
-  // v();
+  function v() {
+    if (ch_dev === "f" || window.localStorage.getItem("access") !== "admin") {
+      document.oncontextmenu = function (e) {
+        e.preventDefault();
+      };
+    } else {
+      document.oncontextmenu = function (e) {
+        e;
+      };
+    }
+  }
+  v();
 }
 //
 data();
