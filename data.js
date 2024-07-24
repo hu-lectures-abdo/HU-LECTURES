@@ -2,10 +2,10 @@ let array_ = [
   ["zero_null", "UserName"],
   ["zero_islam", "ahmed islam"],
   ["zero_eyad", "اياد صيام PT"],
-  ['zero_fawzy' , 'muhammed ahmed'],
+  ["zero_fawzy", "muhammed ahmed"],
   ["zero_mo-abdullah", "mohammed abdullah"],
   ["zero_nour", 'nour adel "الريس"'],
-  ["zero_salmaa", 'salmaa "سبونج بوب"'],
+  ["zero_salmaa", 'salmaa messallamy'],
   ["zero_kero", "kero"],
 ];
 
@@ -148,18 +148,18 @@ function ch_sett() {
       }
     }
   });
-  function v() {
-    if (ch_dev === "f" || window.localStorage.getItem("access") !== "admin") {
-      document.oncontextmenu = function (e) {
-        e.preventDefault();
-      };
-    } else {
-      document.oncontextmenu = function (e) {
-        e;
-      };
-    }
-  }
-  v();
+  // function v() {
+  //   if (ch_dev === "f" || window.localStorage.getItem("access") !== "admin") {
+  //     document.oncontextmenu = function (e) {
+  //       e.preventDefault();
+  //     };
+  //   } else {
+  //     document.oncontextmenu = function (e) {
+  //       e;
+  //     };
+  //   }
+  // }
+  // v();
 }
 //
 data();
@@ -212,3 +212,18 @@ function z() {
     name_.innerHTML = `${window.localStorage.getItem("userName")}`;
   }
 }
+function tv() {
+  let t = moment(new Date()).format("LT");
+  return t;
+}
+ityped.init(document.querySelector("#ityped"), {
+  strings: [
+    `!DOCTYPE html`,
+    ' charset="UTF-8"',
+    "A|B|D|O",
+    " welcome to HU lectures ",
+    `${tv()}`,
+    `${window.localStorage.getItem('userName') ?? '...'}`,
+  ],
+  loop: false,
+});
