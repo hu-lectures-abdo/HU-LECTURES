@@ -112,11 +112,34 @@
   font-size: 35px;
   transform: translateY(-3px);
 }
+* body nav .name {
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  background-color: #fff;
+  position: relative;
+  padding: 5px 0 5px 12px;
+  overflow: hidden;
+  display: none;
+}
+* body nav .name .n-s {
+  display: block;
+  transform: translate(30px, -3px);
+  text-transform: capitalize;
+}
+* body nav .name .s-l {
+  position: absolute;
+  font-size: 30px;
+  top: -4px;
+  left: 6px;
+}
 * body nav .search-bar {
   width: 100%;
   min-height: var(--input-search-height);
   max-height: var(--search-bar);
-  margin-top: 8px;
+  margin-top: 0px;
 }
 * body nav .search-bar .search-box {
   width: 100%;
@@ -842,11 +865,19 @@
   background-color: rgba(141, 139, 139, 0.4588235294);
 }
 .box-pig .box-alert {
+  --bgColor: white;
+  --beamColor: yellow;
+  --spacer: 1rem;
   width: 500px;
   height: 300px;
-  background-color: #ddd;
+  background: var(--bgColor);
   padding: 5px;
   position: relative;
+}
+.box-pig .box-alert.show-password {
+  --bgColor: black;
+  --inputColor: white;
+  --outlineColor: var(--beamColor);
 }
 .box-pig .box-alert .close-item {
   position: absolute;
@@ -889,25 +920,55 @@
     opacity: 0;
   }
 }
-.box-pig .box-alert .div-input {
+.box-pig .box-alert .input-wrapper {
   width: 100%;
   height: 48%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.box-pig .box-alert .div-input input {
-  padding: 10px;
-  outline: none;
-  border: none;
-  font-size: 24px;
+.box-pig .box-alert .input-wrapper input {
+  display: inline-block;
+  padding: 10px 8px;
+  width: 340px;
+  font-size: 23px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px black, inset 6px 6px 0 rgba(30, 144, 255, 0.2), 3px 3px 0 rgba(30, 144, 255, 0.2);
+  -webkit-appearance: none;
 }
-.box-pig .box-alert .div-input input:focus {
-  border: 1px solid #000;
+.box-pig .box-alert .input-wrapper input:focus {
+  outline-offset: 1px;
+}
+.box-pig .box-alert .input-wrapper .show-password input {
+  box-shadow: inset 0 0 0 2px black;
+  border: 2px dashed white;
+}
+.box-pig .box-alert .input-wrapper .show-password input:focus {
+  outline: none;
+  border-color: var(--beamColor);
 }
 .box-pig .box-alert .mess-t-f {
   text-align: center;
   font-size: 20px;
   font-family: monospace;
   padding-top: 20px;
+}
+.box-pig .box-alert .box-load {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-pig .box-alert .box-load svg path,
+.box-pig .box-alert .box-load svg rect {
+  fill: #FF6700;
+}
+.box-pig .box-alert .p-end {
+  position: absolute;
+  bottom: 10px;
+  left: 110px;
+  font-family: monospace;
 }/*# sourceMappingURL=NAV.css.map */
