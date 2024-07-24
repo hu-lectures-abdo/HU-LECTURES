@@ -954,6 +954,7 @@
   font-size: 20px;
   font-family: monospace;
   padding-top: 20px;
+  transform: translateY(-10px);
 }
 .box-pig .box-alert .box-load {
   width: 100%;
@@ -967,8 +968,6 @@
   fill: #FF6700;
 }
 .box-pig .box-alert .p-end {
-  position: absolute;
-  bottom: 10px;
-  left: 110px;
+  text-align: center;
   font-family: monospace;
 }/*# sourceMappingURL=NAV.css.map */
