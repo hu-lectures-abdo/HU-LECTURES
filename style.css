@@ -372,7 +372,7 @@
   width: 100%;
   padding-inline: 10px;
   padding-left: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   position: fixed;
@@ -514,6 +514,22 @@
   height: 100vh;
   border-bottom: 1px solid #000;
   overflow: clip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* body .container .sec .glass {
+  width: 90%;
+  min-height: 80vh;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 * body .container .g-sec #particles-js {
   position: absolute;
@@ -970,4 +986,36 @@
 .box-pig .box-alert .p-end {
   text-align: center;
   font-family: monospace;
+}
+
+.to-top {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #fd4912;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4784313725);
+  overflow: hidden;
+}
+.to-top:hover {
+  background-color: #da3f18;
+  font-size: 70px;
+}
+.to-top:hover span {
+  bottom: -20px;
+}
+.to-top span {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #fff;
 }/*# sourceMappingURL=NAV.css.map */
