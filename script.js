@@ -208,3 +208,14 @@ setTimeout((_) => {
     loop: false,
   });
 }, 2000);
+let to = document.querySelector('.to-top')
+document.body.onscroll = function(){
+  if(scrollY >= 1000){
+    to.style.display = 'block';
+  }else {
+    to.style.display = 'none';
+  }
+}
+to.onclick = function() {
+window.scrollTo(0,0)
+}
