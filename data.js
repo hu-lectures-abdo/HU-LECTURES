@@ -1,10 +1,10 @@
 let array_ = [
   ["zero_null", "UserName"],
-  ["zero_islam", "ahmed islam"],
-  ["zero_eyad", "اياد صيام PT"],
-  ["zero_fawzy", "muhammed ahmed"],
-  ["zero_mo-abdullah", "mohammed abdullah"],
-  ["zero_nour", 'nour adel "الريس"'],
+  ["zero_islam", "ahmed islam ✨"],
+  ["zero_eyad", "eyad seyam ✨"],
+  ["zero_fawzy", "muhammed ahmed ✨"],
+  ["zero_mo-abdullah", "mohammed abdullah ✨"],
+  ["zero_nour", 'nour adel'],
   ['zero_s', `SpongeBob`],
   ["zero_kero", "kero"],
 ];
@@ -77,7 +77,7 @@ function local() {
     p_1.remove();
     data();
     ityped.init(document.querySelector("#p_2"), {
-      strings: [` DEV:Abdu11aH `],
+      strings: [` DEV:Abdu11aH C//`],
       loop: false,
     });
     //
@@ -109,7 +109,7 @@ function ch_sett() {
       p_end.style.display = "none";
       p_1.remove();
       ityped.init(document.querySelector("#p_2"), {
-        strings: [` DEV:Abdu11aH  `],
+        strings: [` DEV:Abdu11aH C//`],
         loop: false,
       });
       ch_dev = "t";
@@ -153,7 +153,7 @@ function ch_sett() {
       document.oncontextmenu = function (e) {
         e.preventDefault();
       };
-    } else {lo
+    } else {
       document.oncontextmenu = function (e) {
         e;
       };
@@ -216,14 +216,29 @@ function tv() {
   let t = moment(new Date()).format("LT");
   return t;
 }
+function n_admin(){
+  if (window.localStorage.getItem("access") == "admin") {
+     return `abdullah mamdouh C//`;
+  }
+}
+function n_admin_state(){
+  if (window.localStorage.getItem("access") == "admin") {
+     return `the adminsterator`;
+  }
+}
+function n_vip_user(){
+  if (window.localStorage.getItem("userName")) {
+    return `VIP user`;
+  }
+}
 ityped.init(document.querySelector("#ityped"), {
   strings: [
     `!DOCTYPE html`,
-    ' charset="UTF-8"',
     "A|B|D|O",
     " welcome to HU lectures ",
+    `${n_admin_state() ?? n_vip_user() ?? 'user'} `,
     `${tv()}`,
-    `${window.localStorage.getItem('userName') ?? '...'}`,
+    `${ n_admin() ?? window.localStorage.getItem('userName') ?? '...'}`,
   ],
   loop: false,
 });
