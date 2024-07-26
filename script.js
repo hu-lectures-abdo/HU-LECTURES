@@ -126,6 +126,8 @@ function dark_mode() {
   let title = document.querySelector(".title p");
   let title_span = document.querySelector(".title p span");
   let box_text = document.querySelector(".pl");
+  let sec_box = document.querySelectorAll('.glass');
+  let x_sign = document.querySelectorAll('x-sign');
 
   //
 
@@ -150,6 +152,33 @@ function dark_mode() {
     "color:#ddd;border-top: 4px double #ddd;border-bottom: 4px double #ddd;";
   title_span.style.cssText = "-webkit-text-fill-color: transparent;";
   box_text.style.display = "none";
+  sec_box.forEach((e)=> {
+    e.style.boxShadow = ` inset 4px 4px 5px rgba(255, 255, 255, 0.3), 
+                          inset -4px -4px 5px rgba(0, 0, 0, 0.1),
+                         rgba(0, 0, 0, 0.4) 10px 6px 39px `
+  })
+  x_sign.forEach((e)=> {
+    e.style.cssText = `  color: yellow;
+            --color1: goldenrod;
+            --color2: orangered;
+            --color3: mediumblue;
+            --color4: purple;
+            font-family: Gruppo;
+            --interval: 1s;
+            display: block;
+            text-shadow: 
+              0 0 10px var(--color1),
+              0 0 20px var(--color2),
+              0 0 40px var(--color3),
+              0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(60%);
+            font-size: 40px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            font-weight: 400;
+            animation: flicker steps(100) var(--interval) 1s infinite;`
+  })
 }
 
 //
@@ -168,6 +197,8 @@ function light_mode() {
   let title = document.querySelector(".title p");
   let title_span = document.querySelector(".title p span");
   let box_text = document.querySelector(".pl");
+  let sec_box = document.querySelectorAll('.glass');
+  let x_sign = document.querySelectorAll('x-sign');
 
   //
 
@@ -193,6 +224,29 @@ function light_mode() {
     "color:#000;border-top: 4px double #000;border-bottom: 4px double #000;";
   title_span.style.cssText = "-webkit-text-fill-color: #000;";
   box_text.style.display = "block";
+  sec_box.forEach((e)=> {
+    e.style.boxShadow = `-10px -10px 10px rgba(255, 255, 255, 0.2),
+                           15px 15px 15px rgba(0, 0, 0, .1),
+                          inset  -10px -10px 10px rgba(255, 255, 255, 0.2),
+                          inset  15px 15px 15px rgba(0, 0, 0, .1)`;
+  })
+  x_sign.forEach((e)=> {
+    e.style.cssText = `  color: black;
+            font-family: Gruppo;
+            display: block;
+            text-shadow: 
+              0 0 10px var(--color1),
+              0 0 20px var(--color2),
+              0 0 40px var(--color3),
+              0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(60%);
+            font-size: 40px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            font-weight: 400;
+            animation: flicker steps(100) var(--interval) 1s infinite;`
+  })
 }
 //
 
@@ -219,3 +273,19 @@ document.body.onscroll = function(){
 to.onclick = function() {
 window.scrollTo(0,0)
 }
+const signs = document.querySelectorAll('x-sign')
+const randomIn = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1) + min)
+)
+
+const mixupInterval = el => {
+  const ms = randomIn(2000, 4000)
+  el.style.setProperty('--interval', `${ms}ms`)
+}
+
+signs.forEach(el => {
+  mixupInterval(el)
+  el.addEventListener('webkitAnimationIteration', () => {
+    mixupInterval(el)
+  })
+})
