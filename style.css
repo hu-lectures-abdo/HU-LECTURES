@@ -407,48 +407,6 @@
           user-select: none;
   overflow: clip;
 }
-* body .container .slider-click-btn .slider {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: -70px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-* body .container .slider-click-btn .slider .wrapper {
-  width: 80%;
-  margin-inline: auto;
-  position: relative;
-  height: 50px;
-  margin-top: 5rem;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
-          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
-}
-@keyframes scrollLeft {
-  to {
-    left: -1200px;
-  }
-}
-* body .container .slider-click-btn .slider .item {
-  width: 100%;
-  height: 70px;
-  border-radius: 0px;
-  position: absolute;
-  left: max(1600px, 100%);
-  animation: scrollLeft 20s infinite linear;
-  color: #ffffff;
-}
-* body .container .slider-click-btn .slider .item2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 20px;
-  font-family: monospace;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
 * body .container .slider-click-btn .btn {
   /* burger-1 */
 }
