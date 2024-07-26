@@ -511,25 +511,44 @@
 }
 * body .container .sec {
   width: 100%;
-  height: 100vh;
-  border-bottom: 1px solid #000;
+  min-height: 100vh;
+  padding-bottom: 30px;
   overflow: clip;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+* body .container .sec .v {
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  left: 5%;
+}
+* body .container .sec .v x-sign {
+  color: rgb(0, 0, 0);
+  font-family: Gruppo;
+  display: block;
+  font-size: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 400;
+}
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
 }
 * body .container .sec .glass {
-  width: 90%;
-  min-height: 80vh;
-  margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  width: 93%;
+  min-height: 87vh;
+  margin-top: 100px;
+  position: relative;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1), inset -10px -10px 10px rgba(255, 255, 255, 0.2), inset 15px 15px 15px rgba(0, 0, 0, 0.1);
 }
 * body .container .g-sec #particles-js {
   position: absolute;
@@ -817,6 +836,13 @@
   * body .container .g-sec .content .title p {
     width: 40em;
   }
+  * body .container .sec .v {
+    top: 55px;
+    left: 5%;
+  }
+  * body .container .sec .v x-sign {
+    font-size: 30px;
+  }
 }
 @media (max-width: 490px) {
   * body .container .g-sec .content .title p span {
@@ -884,11 +910,13 @@
   --bgColor: white;
   --beamColor: yellow;
   --spacer: 1rem;
-  width: 500px;
+  width: min(500px, 95%);
   height: 300px;
   background: var(--bgColor);
   padding: 5px;
   position: relative;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3), inset -4px -4px 5px rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 10px 6px 39px;
 }
 .box-pig .box-alert.show-password {
   --bgColor: black;
@@ -905,6 +933,7 @@
   padding-right: 5px;
   display: flex;
   align-items: center;
+  border-top-right-radius: 10px;
   justify-content: center;
 }
 .box-pig .box-alert .close-item:hover {
