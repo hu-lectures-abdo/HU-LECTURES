@@ -212,10 +212,10 @@ function z() {
     name_.innerHTML = `${window.localStorage.getItem("userName")}`;
   }
 }
-function tv() {
-  let t = moment(new Date()).format("LT");
-  return t;
-}
+// function tv() {
+//   let t = moment(new Date()).format("LT");
+//   return t;
+// }
 function n_admin(){
   if (window.localStorage.getItem("access") == "admin") {
      return `abdullah mamdouh C//`;
@@ -237,7 +237,7 @@ ityped.init(document.querySelector("#ityped"), {
     "A|B|D|O",
     " welcome to HU lectures ",
     `${n_admin_state() ?? n_vip_user() ?? 'user'} `,
-    `${tv()}`,
+    // `${tv()}`,
     `${ n_admin() ?? window.localStorage.getItem('userName') ?? '...'}`,
   ],
   loop: false,
