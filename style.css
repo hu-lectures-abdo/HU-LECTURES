@@ -13,14 +13,6 @@
   --y: 0;
 }
 
-@font-face {
-  font-family: Sriracha;
-  src: url(Sriracha-Regular.ttf);
-}
-@font-face {
-  font-family: Gruppo;
-  src: url(Gruppo-Regular.ttf);
-}
 * {
   padding: 0%;
   margin: 0%;
@@ -112,12 +104,12 @@
   display: inline-block;
   width: -moz-fit-content;
   width: fit-content;
-  border-left: 2px solid #000;
   height: 53px;
+  border-left: 2px solid #000;
   margin-bottom: 4px;
   padding-left: 10px;
   margin-left: 5px;
-  font-family: Sriracha;
+  font-family: "Sriracha", cursive;
 }
 * body nav .header .logo:nth-child(2) a {
   display: inline-block;
@@ -506,7 +498,7 @@
 }
 * body .container .sec .v x-sign {
   color: rgb(0, 0, 0);
-  font-family: Gruppo;
+  font-family: "Gruppo", sans-serif;
   display: block;
   font-size: 40px;
   text-transform: uppercase;
