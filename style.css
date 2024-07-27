@@ -112,6 +112,7 @@
   display: inline-block;
   width: -moz-fit-content;
   width: fit-content;
+  border-left: 2px solid #000;
   height: 53px;
   margin-bottom: 4px;
   padding-left: 10px;
