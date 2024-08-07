@@ -10,152 +10,17 @@
     <title>HU LECTURES</title>
   </head>
   <body>
-    <nav class="cancello">
-      <div class="header">
-        <span class="logo-hu logo"><a href="#">hu</a></span>
-        <span class="logo-abdo logo"><a href="#"><span class="abdo">a</span>bdo</a></span>
-      </div>
-      <div class="name">
-        <span class="s-l"
-          ><ion-icon name="person-circle-outline"></ion-icon></span
-        ><span class="n-s"></span>
-      </div>
-      <div class="search-bar">
-        <div class="search-box">
-          <span><ion-icon name="search-outline"></ion-icon></span>
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search . . ."
-          />
-        </div>
-        <div class="box-search-result box-result"></div>
-      </div>
-      <div class="links-box">
-        <a
-          href="https://hu-lectures-abdo.github.io/menu-semesters/"
-          class="main-li"
-          ><p>
-            <span><ion-icon name="tablet-landscape-outline"></ion-icon></span
-            ><span>dashboard</span>
-          </p></a
-        >
-        <a style="cursor: pointer" class="main-li li-sub-main">
-          <p>
-            <span><ion-icon name="bookmark-outline"></ion-icon></span
-            ><span>subjects</span
-            ><span class="arrow-a"
-              ><ion-icon name="chevron-down-outline"></ion-icon
-            ></span></p
-        ></a>
-        <div class="sub cancello">
-          <ul>
-            <li class="sub-li">
-              <a href="#sub_one" data-name="anatomy">anatomy</a>
-            </li>
-            <li class="sub-li">
-              <a href="#sub_two" data-name="physiology">physiology</a>
-            </li>
-            <li class="sub-li">
-              <a href="#sub_three" data-name="hydrotherapy">hydrotherapy</a>
-            </li>
-            <li class="sub-li">
-              <a href="#sub_four" data-name="biochemistry">biochemistry</a>
-            </li>
-            <li class="sub-li">
-              <a href="#sub_five" data-name="community health"
-                >community health</a
-              >
-            </li>
-            <li class="sub-li">
-              <a href="#sub_six" data-name="ethics and lows">ethics and lows</a>
-            </li>
-            <li class="sub-li">
-              <a href="#sub_seven" data-name="biochemistry">biochemistry</a>
-            </li>
-            <li class="sub-li">
-              <a href="#" data-name="computer skills">computer skills</a>
-            </li>
-          </ul>
-        </div>
-        <a style="cursor: pointer" class="main-li settings">
-          <p>
-            <span><ion-icon name="settings-outline"></ion-icon></span
-            ><span>settings</span>
-          </p></a
-        >
-
-        <a href="#" class="main-li mode"
-          ><p>
-            <span id="icon_mode"
-              ><ion-icon name="moon-outline"></ion-icon
-            ></span>
-          </p>
-
-          <div class="block"></div>
-          <span id="text_mode">dark mode</span>
-          <span class="switch-4">
-            <input id="switch-round" type="checkbox"  />
-            <label for="switch-round"></label>
-          </span>
-        </a>
-      </div>
-    </nav>
-    <!-- ------------------- container  -->
-    <div class="container">
-      <!-- header-----------     -->
-      <div class="slider-click-btn">
-        <a href="#" class="logo"><span>HU</span></a>
-        <div class="slider">
-          <!-- slider -->
-          <div class="wrapper">
-          </div>
-        </div>
-        <span id="btn" class="btn">
-          <button
-            onclick="this.querySelector('span').classList.toggle('is-closed')"
-            class="button"
-          >
-            <span class="burger burger-1"></span>
-          </button>
-        </span>
-      </div>
+    <script>
+      document.write(unescape('%20%3Cnav%20class%3D%22cancello%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22header%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22logo-hu%20logo%22%3E%3Ca%20href%3D%22%23%22%3Ehu%3C/a%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22logo-abdo%20logo%22%3E%3Ca%20href%3D%22%23%22%3E%3Cspan%20class%3D%22abdo%22%3Ea%3C/span%3Ebdo%3C/a%3E%3C/span%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22name%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22s-l%22%0A%20%20%20%20%20%20%20%20%20%20%3E%3Cion-icon%20name%3D%22person-circle-outline%22%3E%3C/ion-icon%3E%3C/span%0A%20%20%20%20%20%20%20%20%3E%3Cspan%20class%3D%22n-s%22%3E%3C/span%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22search-bar%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22search-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cion-icon%20name%3D%22search-outline%22%3E%3C/ion-icon%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%0A%20%20%20%20%20%20%20%20%20%20%20%20type%3D%22search%22%0A%20%20%20%20%20%20%20%20%20%20%20%20name%3D%22search%22%0A%20%20%20%20%20%20%20%20%20%20%20%20id%3D%22search%22%0A%20%20%20%20%20%20%20%20%20%20%20%20placeholder%3D%22Search%20.%20.%20.%22%0A%20%20%20%20%20%20%20%20%20%20/%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22box-search-result%20box-result%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22links-box%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%0A%20%20%20%20%20%20%20%20%20%20href%3D%22https%3A//hu-lectures-abdo.github.io/menu-semesters/%22%0A%20%20%20%20%20%20%20%20%20%20class%3D%22main-li%22%0A%20%20%20%20%20%20%20%20%20%20%3E%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cion-icon%20name%3D%22tablet-landscape-outline%22%3E%3C/ion-icon%3E%3C/span%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cspan%3Edashboard%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%3C/a%0A%20%20%20%20%20%20%20%20%3E%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22cursor%3A%20pointer%22%20class%3D%22main-li%20li-sub-main%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cion-icon%20name%3D%22bookmark-outline%22%3E%3C/ion-icon%3E%3C/span%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cspan%3Esubjects%3C/span%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cspan%20class%3D%22arrow-a%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cion-icon%20name%3D%22chevron-down-outline%22%3E%3C/ion-icon%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3C/span%3E%3C/p%0A%20%20%20%20%20%20%20%20%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sub%20cancello%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_one%22%20data-name%3D%22anatomy%22%3Eanatomy%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_two%22%20data-name%3D%22physiology%22%3Ephysiology%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_three%22%20data-name%3D%22hydrotherapy%22%3Ehydrotherapy%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_four%22%20data-name%3D%22biochemistry%22%3Ebiochemistry%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_five%22%20data-name%3D%22community%20health%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ecommunity%20health%3C/a%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_six%22%20data-name%3D%22ethics%20and%20lows%22%3Eethics%20and%20lows%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sub_seven%22%20data-name%3D%22biochemistry%22%3Ebiochemistry%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22sub-li%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20data-name%3D%22computer%20skills%22%3Ecomputer%20skills%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22cursor%3A%20pointer%22%20class%3D%22main-li%20settings%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cion-icon%20name%3D%22settings-outline%22%3E%3C/ion-icon%3E%3C/span%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cspan%3Esettings%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%3C/a%0A%20%20%20%20%20%20%20%20%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22main-li%20mode%22%0A%20%20%20%20%20%20%20%20%20%20%3E%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22icon_mode%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3E%3Cion-icon%20name%3D%22moon-outline%22%3E%3C/ion-icon%0A%20%20%20%20%20%20%20%20%20%20%20%20%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22block%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22text_mode%22%3Edark%20mode%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22switch-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22switch-round%22%20type%3D%22checkbox%22%20%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22switch-round%22%3E%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/nav%3E%0A%20%20%20%20%3C%21--%20-------------------%20container%20%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%3C%21--%20header-----------%20%20%20%20%20--%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22slider-click-btn%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22logo%22%3E%3Cspan%3EHU%3C/span%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22slider%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%21--%20slider%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22btn%22%20class%3D%22btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%0A%20%20%20%20%20%20%20%20%20%20%20%20onclick%3D%22this.querySelector%28%27span%27%29.classList.toggle%28%27is-closed%27%29%22%0A%20%20%20%20%20%20%20%20%20%20%20%20class%3D%22button%22%0A%20%20%20%20%20%20%20%20%20%20%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22burger%20burger-1%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%3C/div%3E'));
+    </script>
+      
       <!-- body ----------- -->
       <!-- general sec -->
       <div class="sec g-sec">
-        <div id="particles-js"></div>
-        <div class="auto-writing">
-          <div id="app">
-            <span id="ityped"></span>
-          </div>
-        </div>
-        <div class="content">
-          <div class="title">
-            <p>
-              lectures of 2nd students hu
-              <span> physical therapy </span>
-              &mdash;heliopolis university&mdash;
-            </p>
-          </div>
-          <div class="boxs">
-            <div class="box-note">
-              <h1>messages:</h1>
-              <div id="app">
-                <span id="ityed-mes"></span>
-              </div>
-            </div>
-            <div class="box-text">
-              <div class="pl">
-                <div class="pl__dot pl__dot--a"></div>
-                <div class="pl__dot pl__dot--b"></div>
-                <div class="pl__dot pl__dot--c"></div>
-                <div class="pl__dot pl__dot--d"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <script>
+          document.write(unescape('%20%20%3Cdiv%20id%3D%22particles-js%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22auto-writing%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22app%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22ityped%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22title%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20lectures%20of%202nd%20students%20hu%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%20physical%20therapy%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%26mdash%3Bheliopolis%20university%26mdash%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22boxs%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22box-note%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%3Emessages%3A%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22app%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22ityed-mes%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22box-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pl%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pl__dot%20pl__dot--a%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pl__dot%20pl__dot--b%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pl__dot%20pl__dot--c%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pl__dot%20pl__dot--d%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E'));
+         </script>
+          
       <!--  -->
       <div class="sec sub-1" id="sub_one">
          <span class="v">
@@ -273,107 +138,34 @@
       <p>made with love by <span>abdullah mamdouh </span><i>&copy; 2024</i></p>
       <a href="https://hu-lectures-abdo.github.io/menu-semesters/">to another semester ></a>
     </footer>
-    <div class="to-top">
-      <span><ion-icon name="chevron-up-outline"></ion-icon></span>
-    </div>
-    <div class="hov-lec"></div>
-    <div class="box-lect">
-      <span class="close-lect"><ion-icon name="close-outline"></ion-icon></span>
-      <h1 class="title">lectrue info </h1>
-      <p class="p-l sub-lec"></p>
-      <p class="p-l name-lec"></p>
-      <p class="p-l num-lec"></p>
-       <div class="state">
-       <div class="vi">
-        <span></span><p>not Visit</p>
-       </div>
-        <div class="count">
-          <p>count:</p>
+      <script>
+      document.write(unescape('%3Cdiv%20class%3D%22to-top%22%3E%0A%20%20%20%20%20%20%3Cspan%3E%3Cion-icon%20name%3D%22chevron-up-outline%22%3E%3C/ion-icon%3E%3C/span%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22hov-lec%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22box-lect%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22close-lect%22%3E%3Cion-icon%20name%3D%22close-outline%22%3E%3C/ion-icon%3E%3C/span%3E%0A%20%20%20%20%20%20%3Ch1%20class%3D%22title%22%3Electrue%20info%20%3C/h1%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22p-l%20sub-lec%22%3E%3C/p%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22p-l%20name-lec%22%3E%3C/p%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22p-l%20num-lec%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%3Cdiv%20class%3D%22state%22%3E%0A%20%20%20%20%20%20%20%3Cdiv%20class%3D%22vi%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3E%3C/span%3E%3Cp%3Enot%20Visit%3C/p%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22count%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3Ecount%3A%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%3Cdiv%20class%3D%22check%22%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20%20id%3D%22chl%22%3E%0A%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22chl%22%3E%3C/label%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3Ehighlight%3C/span%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22box-btns%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22btn-l%20re-btn%22%3Erecord%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22btn-l%20down-btn%22%3Edownload%3C/a%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22check-log%22%3E%0A%20%20%20%20%20%20%3Ch1%3Eare%20you%20sure%20%21%3F%3C/h1%3E%0A%20%20%20%20%20%20%3Cp%3E%3C/p%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22text%22%3E%20%3Cspan%3Eyes%3C/span%3E%20%3Cspan%3Eno%3C/span%3E%3C/div%3E%0A%20%20%20%20%3C/div%3E'));
+     </script>
+      
+    <!--  -->
+    <script>
+      document.write(unescape('%20%3Cdiv%20class%3D%22big-vip%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22box-vip-set%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22close-item%22%20id%3D%22close_vip%22%3E%3Cion-icon%20name%3D%22close-outline%22%3E%3C/ion-icon%3E%3C/span%3E%0A%20%20%20%20%20%20%3Ch1%3EVIP%20settings%3C/h1%3E%0A%20%20%20%20%20%20%20%3Cdiv%20class%3D%22box-btn%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ch-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3Edark%20animation%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22switch-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22dark_animation%22%20type%3D%22checkbox%22%20%20disabled%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22dark_animation%22%3E%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ch-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3Elight%20animation%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22switch-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22light_animation%22%20type%3D%22checkbox%22%20checked%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22light_animation%22%3E%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ch-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3Ecolor%20name%20of%20sub%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20id%3D%22c_c%22%3Etap%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ch-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3Ebackground%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22switch-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22back%22%20type%3D%22checkbox%22%20%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22back%22%3E%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22back-color-change%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%20more%20%3Cinput%20type%3D%22color%22%20%20id%3D%22sect_color%22%20%20value%3D%22%23ff0000%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22color-ch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22color%22%20data-text%3D%22%23000%22%20data-color%3D%22%23cf9249%22%20style%3D%22--cl%3A%23cf9249%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22color%22%20data-text%3D%22%23000%22%20data-color%3D%22%23cf72b8%22%20style%3D%22--cl%3A%23cf72b8%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22color%22%20data-text%3D%22%23000%22%20data-color%3D%22%235d8dad%22%20style%3D%22--cl%3A%235d8dad%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22color%22%20data-text%3D%22%23000%22%20%20data-color%3D%22%2339a354%22%20style%3D%22--cl%3A%2339a354%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%3Cspan%20class%3D%22ok%22%3Eok%21%3C/span%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22block-cv%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22box-c-v%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22close-item%22%20id%3D%22close_c%22%3E%3Cion-icon%20name%3D%22close-outline%22%3E%3C/ion-icon%3E%3C/span%3E%0A%20%20%20%20%20%3Cp%3E%3Cspan%3Eadd%3C/span%3E%20%3Cinput%20type%3D%22color%22%20id%3D%22color_v%22%20checked%3D%22true%22%3E%3C/p%3E%0A%20%20%20%20%20%20%20%3Cdiv%20class%3D%22box-c-c%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22e_21%22%20data-color%3D%22%23000%22%20style%3D%22--cll%3A%23000%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22e_21%22%20data-color%3D%22%23fff%22%20style%3D%22--cll%3A%23fff%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22e_21%22%20data-color%3D%22%23cf9249%22%20style%3D%22--cll%3A%23cf9249%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E'));
+     </script>
+      
+    <div class="x-v-x">
+      <div class="ccv-box">
+        <header>
+          <span class="logo-v">abdo</span>
+          <span class="load">
+            <div class="loader"></div>
+          </span>
+        </header>
+        <div class="input-box-a">
+          <main class='wrapper'>
+            <input type='text' placeholder=''>
+            <span>Enter The Pass</span>
+          </main>
         </div>
-       
-       <div class="check">
-        <input type="checkbox"  id="chl">
-        <label for="chl"></label>
-        <span>highlight</span>
-       </div>
-       </div>
-      <div class="box-btns">
-        <a class="btn-l re-btn">record</a>
-        <a class="btn-l down-btn">download</a>
       </div>
     </div>
-    <div class="check-log">
-      <h1>are you sure !?</h1>
-      <p></p>
-      <div class="text"> <span>yes</span> <span>no</span></div>
-    </div>
-    <!--  -->
-    <div class="big-vip"></div>
-    <div class="box-vip-set">
-      <span class="close-item" id="close_vip"><ion-icon name="close-outline"></ion-icon></span>
-      <h1>VIP settings</h1>
-       <div class="box-btn">
-
-         <div class="ch-1">
-          <p>dark animation </p>
-          <span class="switch-4">
-            <input id="dark_animation" type="checkbox"  disabled />
-            <label for="dark_animation"></label>
-          </span>
-         </div>
-         <div class="ch-1">
-          <p>light animation</p>
-          <span class="switch-4">
-            <input id="light_animation" type="checkbox" checked />
-            <label for="light_animation"></label>
-          </span>
-         </div>
-
-         <div class="ch-1">
-          <p>color name of sub </p>
-          <p id="c_c">tap</p>
-         </div>
-         <div class="ch-1">
-          <p>background</p>
-          <span class="switch-4">
-            <input id="back" type="checkbox"  />
-            <label for="back"></label>
-          </span>
-         </div>
-         
-         <div class="back-color-change">
-           <p> more <input type="color"  id="sect_color"  value="#ff0000"></p>
-           <div class="color-ch">
-            <span id="color" data-text="#000" data-color="#cf9249" style="--cl:#cf9249"></span>
-            <span id="color" data-text="#000" data-color="#cf72b8" style="--cl:#cf72b8"></span>
-            <span id="color" data-text="#000" data-color="#5d8dad" style="--cl:#5d8dad"></span>
-            <span id="color" data-text="#000"  data-color="#39a354" style="--cl:#39a354"></span>
-           </div>
-         </div>
-       </div>
-       <span class="ok">ok!</span>
-    </div>
-    <div class="block-cv"></div>
-    <div class="box-c-v">
-      <span class="close-item" id="close_c"><ion-icon name="close-outline"></ion-icon></span>
-     <p><span>add</span> <input type="color" id="color_v" checked="true"></p>
-       <div class="box-c-c">
-        <span id="e_21" data-color="#000" style="--cll:#000"></span>
-        <span id="e_21" data-color="#fff" style="--cll:#fff"></span>
-        <span id="e_21" data-color="#cf9249" style="--cll:#cf9249"></span>
-       </div>
-    </div>
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="ityped.js"></script>
-    <script src="lectrue.js"></script>
-    <script src="script.js"></script>
+    <script>
+      document.write(unescape('%3Cscript%0A%20%20%20%20type%3D%22module%22%0A%20%20%20%20src%3D%22https%3A//unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js%22%0A%20%20%20%20%3E%3C/script%3E%0A%20%20%20%20%3Cscript%0A%20%20%20%20%20%20nomodule%0A%20%20%20%20%20%20src%3D%22https%3A//unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js%22%0A%20%20%20%20%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22ityped.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22lectrue.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22code.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22script.js%22%3E%3C/script%3E'));
+      </script> 
   </body>
 </html>
 
